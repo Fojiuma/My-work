@@ -1,68 +1,84 @@
-let firstcard = getRandomCard();
-let secondcard = getRandomCard();
-let cards = [firstcard, secondcard];
 let hasBlackJack = false;
-let isAlive = true;
-let sum = firstcard + secondcard;
-let message = ""
-let CardsEl = document.getElementById("cards-el")
+let isAlive = false;
+let sum = 0;
+let cards;
+let message = "";
+let CardsEl = document.getElementById("cards-el");
+let sumEl = document.querySelector("#sum-el");
+let messageEl = document.getElementById("message-el");
+let start = document.getElementById("start-el")
 
+let player = {
+   name: "Fojiuma",
+ chips: "145"
+}
 
-// console.log(getRandomCard)
+let playerEl = document.getElementById("player-el")
+playerEl.textContent = player.name + ": $" +player.chips
 
-// let sumEl = documnet.getElementById("sum-el")
-let sumEl = document.querySelector("#sum-el")
-let messageEl = document.getElementById("message-el")
+console.log(cards);
 
 function getRandomCard() {
-    let randomNmunber =  Math.floor(Math.random() * 13 ) + 1
-    if (randomNmunber > 10) {
-        return 10
-    }else if(randomNmunber === 1) {
-        return 11
-    }else {
-        return randomNmunber
-    }
-    }
+  let randomNmunber = Math.floor(Math.random() * 13) + 1;
+  if (randomNmunber > 10) {
+    return 10;
+  } else if (randomNmunber === 1) {
+    return 11;
+  } else {
+    return randomNmunber;
+  }
+}
 
 function startGame() {
-    renderGame()
+  isAlive = true;
+  let firstcard = getRandomCard();
+  let secondcard = getRandomCard();
+  cards = [firstcard, secondcard];
+  sum = firstcard + secondcard;
+  renderGame();
 }
 function renderGame() {
-    CardsEl.textContent = "Cards: " 
-    
-for(i = 0; i < cards.length; i++ ){
-    CardsEl.textContent += cards[i] + " "
-}
+  CardsEl.textContent = "Cards: ";
 
-
-    sumEl.textContent = "Sum: " + sum
-    if(sum < 21){
-        message = "Do you want to draw a new card?"
-    }
-    else if(sum === 21){
-        message = "You've got black jack"
-    hasBlackJack = true;
-    }
-    else if(sum > 21){
-        message = "YOU ARE OUT OF THE GAME!"
-        isAlive = false 
-    }
-    messageEl.textContent = message
-   }
-
-  function newCard(){
-    let card = getRandomCard();
-    sum = sum + card;
-    cards.push(card);
-    renderGame();
+  for (i = 0; i < cards.length; i++) {
+    CardsEl.textContent += cards[i] + " ";
   }
 
-let randomnumber = 
-console.log(randomnumber)
+  sumEl.textContent = "Sum: " + sum;
+  if (sum < 21) {
+    message = "Do you want to draw a new card?";
+  } else if (sum === 21) {
+    message = "You've got black jack";
+    hasBlackJack = true;
+  } else if (sum > 21) {
+    message = "YOU ARE OUT OF THE GAME!";
+    isAlive = false;
+  }
+  messageEl.textContent = message;
+}
 
+function newCard() {
+    if (isAlive === true && hasBlackJack === false) {
+        let card = getRandomCard();
+  sum = sum + card;
+  cards.push(card);
+  renderGame();
+      }
+}
 
+// let hasSolvedChallenge = false
+// let hasHintLeft = false
 
+// if(hasSolvedChallenge === false && hasHintLeft === false){
+//     showSolution()
+// }
+
+// function showSolution() {
+//     console.log("Showing the solution....")
+// }
+
+// let randomnumber =
+// console.log(randomnumber)
 
 // function rollDice() {
 //     let flooredNumber = Math.floor(Math.random() * 7 ) + 1
@@ -71,29 +87,6 @@ console.log(randomnumber)
 
 // console.log(rollDice())
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 // let player1Time = 102
 // let player2Time = 107
 
@@ -117,24 +110,6 @@ console.log(randomnumber)
 
 // let totaltime = totalRaceTime()
 // console.log(totaltime)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // for (let count = 10; count < 21; count += 1){
 //     console.log(count)
@@ -163,48 +138,9 @@ console.log(randomnumber)
 // let sentence = ["hello ", "my ", "name ", "is ", "fojiuma"]
 // let greetingEl = document.getElementById("greeting-el")
 
-
 // for (i = 0; i < sentence.length; i++) {
 //     greetingEl.textContent += sentence[i] + " ";
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // let firstname = "FOJIUMA"
 // let lastname = " LANGAYA"
@@ -239,7 +175,6 @@ console.log(randomnumber)
 // document.getElementById("num1-el").textContent = num1;
 // document.getElementById("num2-el").textContent = num2;
 
-
 // let sumEl = document.getElementById("sum-el");
 
 //  function add() {
@@ -262,7 +197,6 @@ console.log(randomnumber)
 //     sumEl.textContent = "Multiplication: " + result;
 //  }
 
-
 // let countEl = document.getElementById("count-el")
 // let saveEl = document.getElementById("save-el")
 
@@ -276,7 +210,7 @@ console.log(randomnumber)
 // // text content makes it easier to read than innerText
 // function save() {
 //     let counter = count + " - "
-//     saveEl.textContent += counter 
+//     saveEl.textContent += counter
 //     countEl.textContent = 0;
 //     console.log(count);
 //     count = 0;
@@ -291,11 +225,11 @@ console.log(randomnumber)
 // let lap1 = 34;
 // let lap2 = 33;
 // let lap3 = 36;
- 
+
 // function logtime() {
 //     totaltime = lap1 + lap2 +lap3;
 //     console.log(totaltime)
-//     or 
+//     or
 //     console.log(lap1 + lap2 + lap3)
 // }
 // logtime()
@@ -316,8 +250,3 @@ console.log(randomnumber)
 // let greeting = "Welcome back "
 
 // welcomeEl.innerHTML = greeting + name;
-
-
-
-
- 
