@@ -1,0 +1,112 @@
+.begin{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Courier New', Courier, monospace;
+  
+}
+.img{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+#pro{
+    margin-left: 10px;
+    margin-right: 5px;
+    width: 70px;
+    height: fit-content;
+    margin-top: 15px ;
+    border: none;
+    background-color: white;
+}
+#loads{
+    margin-right: 5px;
+    width: 90px;
+    height: fit-content;
+    margin-top: 15px ;
+    border: none;
+    background-color: white;
+}
+#Solutions{
+    margin-right: 5px;
+    width: 90px;
+    height: fit-content;
+    margin-top: 15px ;
+    border: none;
+    background-color: white;
+}
+#resources{
+    margin-right: 5px;
+    width: 90px;
+    height: fit-content;
+    margin-top: 15px ;
+    border: none;
+    background-color: white;
+}
+.price{
+    font-family: 'Courier New', Courier, monospace;
+}
+.request{
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 400px;
+    margin-right: 15px;
+    width: fit-content;
+    size: 20px;
+}
+.log{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 15px;
+}
+.get{
+    border: solid black;
+    background-color: black;
+    color: white;
+}
+.get:hover{
+    color: gray;
+}
+.free{
+    justify-items: center;
+    margin-left: 650px;
+    background-color: black;
+    color: white;
+}
+.free:hover{
+    color: gray;
+}
+.pok{
+    display: flex;
+    flex-direction: row;
+    padding-left: 250px;
+}
+
+.AI{
+    margin-right:30px;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+ 
+}
+
+.Wikis{
+    margin-right: 30px;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+   
+}
+.Projects{
+    margin-right: 30px;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+  
+
+}
+.Docs{
+    margin-right: 30px;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+   
+}
+
