@@ -1,0 +1,60 @@
+.begin{
+    display: flex;
+    flex-direction: row;
+    
+}
+#information:hover{
+    color: gray;
+}
+#work:hover{
+    color: gray;
+}
+#test:hover{
+    color: gray;
+}
+#end:hover{
+    color:gray;
+}
+.main{
+    background-color:lightgray;
+}
+.info{
+    margin-left:10%;
+    padding-top: 20px;
+justify-content: center;
+}
+#login{
+    width: fit-content;
+    height: fit-content;
+    background-color:lightgray;
+    color: black;
+    border:none;
+    /* border-color: black; */
+    /* border-radius: 3px,3px,3px,3px; */
+    margin-left: auto;
+padding-left: 5px;
+padding-bottom: 5px;
+font-size: larger;
+}
+#login:hover{
+color: coral;
+}
+#pic{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    float: right;
+     padding-right: 10%;
+     padding-bottom: 50px;
+}
+.hide{
+    display: none;
+}
+.wel:hover + .hide{
+    display: block;
+    color: darksalmon;
+}
+.rest{
+text-align: justify;
+align-items: center;
+}
