@@ -1,9 +1,9 @@
 .begin{
     display: flex;
     flex-direction: row;
-    
+    background-color: gray;
 }
-#information:hover{
+.information:hover{
     color: gray;
 }
 #work:hover{
@@ -37,7 +37,7 @@ padding-bottom: 5px;
 font-size: larger;
 }
 #login:hover{
-color: coral;
+    color: coral;
 }
 #pic{
     width: 300px;
@@ -58,3 +58,27 @@ color: coral;
 text-align: justify;
 align-items: center;
 }
+/* .right{
+    background-color: black;
+    right: 0;
+}
+.centered{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.split{
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.right{
+    background-color: red;
+    right: 0;
+} */
