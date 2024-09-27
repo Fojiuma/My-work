@@ -5,38 +5,204 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="beaut.css">
+    <style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 80px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 10px 0 0 10px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+        </style>
 </head>
 <body>
+    
     <div class="first" style="display: flex;flex-direction: row;">
         <h1 style="padding-left:10px ;"><b>MY <br>PORTFOLIO</b></h1>
-        <h2 style="padding-left: 50px;padding-top: 30px;"><b>HOME</b></h2>
-        <h2 style="padding-left: 100px;padding-top: 30px;"><b>WORK EXPERIENCE</b></h2>
-        <h2 style="padding-left: 100px;padding-top: 30px;"><b>TESTIMONIES</b></h2>
-        <h2 style="padding-left: 100px;padding-top: 30px;"><b>ENDORSEMENTS</b></h2>
-        <h2 style="padding-left: 100px;padding-top: 30px;"><b>CONTACTS</b></h2>
-        
+        <h2 class="home" style="padding-left: 50px;padding-top: 30px;"><b>HOME</b></h2>
+        <h2 class="work" style="padding-left: 100px;padding-top: 30px;"><b>WORK EXPERIENCE</b></h2>
+        <h2 class="test" style="padding-left: 100px;padding-top: 30px;"><b>TESTIMONIES</b></h2>
+        <h2 class="endorsements" style="padding-left: 100px;padding-top: 30px;"><b>ENDORSEMENTS</b></h2>
+        <h2 class="contacts" style="padding-left: 100px;padding-top: 30px;"><b>CONTACTS</b></h2>
+        <button class="log"><h1><b>LOGOUT</b></h1></button>
     </div>
-    <hr>
-    <br>
-<div>
+    
+  <div class="top"> 
+<div class="space">
     <h1><b>Info</b></h1>
-    <img src="sample.png" alt="" style="padding-right: 80px;">
-
+    <img id="img1" src="sample.png" alt="" style="margin-right:20%;">
 </div>
-<hr>
-<div>
-    <button class="web"><h1><b>WEB<br>DEVELOPMENT</b></h1></button>
-    <button class="soft"><h1><b>SOFTWARE <br>DEVELOPMENT</b></h1></button>
-    <button class="UI"><h1><b>UI/UX <br>DESIGNER</b></h1></button>
-    <br>
-    <button class="mobile">MOBILE APP. <br>DESIGNER</button>
-    <button class="IT">IT PROJECT <br>MANAGER</button>
-    <button class="security">INFORMATION <br>SECURITY <br>ANALYSIS</button>
-    <br>
-    <button class="system">SYSTEMS <br>ARCHITECT</button>
-    <button class="engine">AI <br>ENGINEER</button>
-    <button class="hard">COMPUETR <br>HARDWARE <br>ENGINEER</button>
-</div>
+<br>
+<h1 style="text-align: center;font-family: cursive;font-weight: bolder;"><b>WORK <br>EXPERIENCE</b></h1>
+<div id="experiences">
+    <div class="trial">
+    <button class="web"><h1 style="font-size: x-large;"><b>WEB<br>DEVELOPMENT</b></h1></button>
+       <button class="soft"><h1><b>SOFTWARE <br>DEVELOPMENT</b></h1></button>
+        <button class="UI"><h1><b>UI/UX <br>DESIGNER</b></h1></button>
+    </div>
+       <br>
+       <div class="try">
+    <button class="mobile"><h1><b>MOBILE APP. <br>DESIGNER</b></h1></button>
+        <button class="IT"><h1><b>IT PROJECT <br>MANAGER</b></h1></button>
+      <button class="security"><h1><b>INFORMATION <br>SECURITY <br>ANALYSIS</b></h1></button>
+    </div>
+      <br>
+      <div class="third">
+    <button class="system"><h1><b>SYSTEMS <br>ARCHITECT</b></h1></button>
+    <button class="engine"><h1><b>AI <br>ENGINEER</b></h1></button>
+     <button class="hard"><h1><b>COMPUETR <br>HARDWARE <br>ENGINEER</b></h1></button>
+    </div>
+  </div>
 
+  <br>
+  <div>
+    <h1 style="font-family:cursive;text-align: center;"><b>TESTIMONIES</b></h1>
+  </div>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="web.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="sample.png" style="width:100%;height: 80%;">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="web.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)" >❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+    
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+</div>
 </body>
 </html>

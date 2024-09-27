@@ -1,0 +1,125 @@
+.top{
+    background-color:lightgrey;
+}
+.first{
+display: flex;
+flex-direction: row;
+background-color: gray;
+}
+.home:hover{
+    color: lightyellow;
+}
+.work:hover{
+ color: lightyellow;
+}
+.test:hover{
+    color: lightyellow;
+}
+.endorsements:hover{
+    color: lightyellow;
+}
+.contacts:hover{
+    color: lightyellow;
+}
+.log{
+    padding-top: 30px;
+    padding-left: 1000px;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    background-color: gray;
+}
+.log:hover{
+    color: coral;
+}
+.space{
+    margin-right:5%;
+    margin-left: 5%;
+    background-image: url(/html/Background.jpg);
+}
+#experiences{
+    align-items: center;
+    display: block; 
+}
+.trial{
+    display: flex;
+    flex-direction: row;
+}
+.try{
+    display: flex;
+    flex-direction: row;
+}
+.third{
+    display: flex;
+    flex-direction: row;
+}
+.web{
+    margin-left: 20%;
+    width: 500px;
+    height: 400px;
+    background-image: url(/html/web.jpg);
+    background-size: contain;
+}
+.soft{
+    margin-left:5%;
+    width: 500px;
+    height: 400px;
+    background-image: url(/html/web.jpg);
+    background-size: contain;
+}
+.UI{
+    margin-left:5%;
+    width: 500px;
+    height: 400px;
+    background-image: url(/html/web.jpg);
+    background-size: contain;
+    padding-top: 20px;
+}
+.mobile{
+    margin-left:20%;
+    width: 500px;
+    height: 400px;
+    background-image: url(/html/web.jpg);
+    background-size: contain;
+    padding-top: 20px;
+}
+.IT{
+    margin-left:5%;
+    width: 500px;
+    height: 400px;
+    background-image: url(/html/web.jpg);
+    background-size: contain;
+    padding-top: 20px;
+}
+.security{
+    margin-left:5%;
+    width: 500px;
+    height: 400px;
+    background-image: url(/html/web.jpg);
+    background-size: contain;
+    padding-top: 20px;
+}
+.system{
+    margin-left:20%;
+    width: 500px;
+    height: 400px;
+    background-image: url(/html/web.jpg);
+    background-size: contain;
+    padding-top: 20px;
+}
+.engine{
+    margin-left:5%;
+    width: 500px;
+    height: 400px;
+    background-image: url(/html/web.jpg);
+    background-size: contain;
+    padding-top: 20px;
+}
+.hard{
+    margin-left:5%;
+    width: 500px;
+    height: 400px;
+    background-image: url(/html/web.jpg);
+    background-size: contain;
+    padding-top: 20px;
+}
