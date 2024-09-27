@@ -1,6 +1,6 @@
-.top{
+/* .top{
     background-color:lightgrey;
-}
+} */
 .first{
 display: flex;
 flex-direction: row;
@@ -27,15 +27,19 @@ background-color: gray;
     width: fit-content;
     height: fit-content;
     border: none;
-    background-color: gray;
+    background-color:gray;
 }
 .log:hover{
     color: coral;
 }
-.space{
-    margin-right:5%;
-    margin-left: 5%;
-    background-image: url(/html/Background.jpg);
+.input-div{
+    width: 100px;
+    height: 100px;
+    
+}
+#id{
+    width: 600px;
+    height: 600px;
 }
 #experiences{
     align-items: center;
@@ -54,71 +58,71 @@ background-color: gray;
     flex-direction: row;
 }
 .web{
-    margin-left: 20%;
-    width: 500px;
-    height: 400px;
+    margin-left:7%;
+    width: 600px;
+    height: 500px;
     background-image: url(/html/web.jpg);
     background-size: contain;
 }
 .soft{
     margin-left:5%;
-    width: 500px;
-    height: 400px;
+    width: 600px;
+    height: 500px;
     background-image: url(/html/web.jpg);
     background-size: contain;
 }
 .UI{
     margin-left:5%;
-    width: 500px;
-    height: 400px;
+    width: 600px;
+    height: 500px;
     background-image: url(/html/web.jpg);
     background-size: contain;
     padding-top: 20px;
 }
 .mobile{
-    margin-left:20%;
-    width: 500px;
-    height: 400px;
+    margin-left:7%;
+    width: 600px;
+    height: 500px;
     background-image: url(/html/web.jpg);
     background-size: contain;
     padding-top: 20px;
 }
 .IT{
     margin-left:5%;
-    width: 500px;
-    height: 400px;
+    width: 600px;
+    height: 500px;
     background-image: url(/html/web.jpg);
     background-size: contain;
     padding-top: 20px;
 }
 .security{
     margin-left:5%;
-    width: 500px;
-    height: 400px;
+    width: 600px;
+    height: 500px;
     background-image: url(/html/web.jpg);
     background-size: contain;
     padding-top: 20px;
 }
 .system{
-    margin-left:20%;
-    width: 500px;
-    height: 400px;
+    margin-left:7%;
+    width: 600px;
+    height: 500px;
     background-image: url(/html/web.jpg);
     background-size: contain;
     padding-top: 20px;
 }
 .engine{
     margin-left:5%;
-    width: 500px;
-    height: 400px;
+    width: 600px;
+    height: 500px;
     background-image: url(/html/web.jpg);
     background-size: contain;
     padding-top: 20px;
 }
 .hard{
     margin-left:5%;
-    width: 500px;
-    height: 400px;
+    width: 600px;
+    height: 500px;
     background-image: url(/html/web.jpg);
     background-size: contain;
     padding-top: 20px;
