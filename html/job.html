@@ -102,6 +102,17 @@
     
     <div class="first" style="display: flex;flex-direction: row;">
         <h1 style="padding-left:10px ;"><b>MY <br>PORTFOLIO</b></h1>
+        <select name="identify" id="identity" style="height: fit-content;padding-top: 140px;background-color: gray;border: none;width:30px;">
+
+           <option value="0"></option>
+           <option value="1">HOME PAGE</option>
+           <option value="2">SETTINGS</option>
+           <option value="3">THEME</option>
+           <option value="4">LANGUAGES</option>
+           <option value="5">ABOUT</option>
+           <option value="6">SIGN UP</option>
+
+        </select>
         <h2 class="home" style="padding-left: 50px;padding-top: 30px;"><b>HOME</b></h2>
         <h2 class="work" style="padding-left: 100px;padding-top: 30px;"><b>WORK EXPERIENCE</b></h2>
         <h2 class="test" style="padding-left: 100px;padding-top: 30px;"><b>TESTIMONIES</b></h2>
@@ -110,16 +121,17 @@
         <button class="log"><h1><b>LOGOUT</b></h1></button>
     </div>
 
+
   <div class="top"> 
 <div class="space" style="display: flex;flex-direction: row;">
     <img id="img1" src="sample.png" alt="" style="margin-right:20%;padding-top: 30px;">
 </div>
 
 <br>
-<h1 style="text-align: center;font-family: cursive;font-weight: bolder;"><b>WORK <br>EXPERIENCE</b></h1>
+<h1 style="text-align: center;font-family: cursive;font-weight: bolder; background-color: #bbb;"><b>WORK <br>EXPERIENCE</b></h1>
 <div id="experiences">
     <div class="trial">
-    <button class="web"><h1 style="font-size: x-large;"><b>WEB<br>DEVELOPMENT</b></h1></button>
+    <button id="web"><h1 style="font-size: x-large;"><b>WEB<br>DEVELOPMENT</b></h1></button>
        <button class="soft"><h1><b>SOFTWARE <br>DEVELOPMENT</b></h1></button>
         <button class="UI"><h1><b>UI/UX <br>DESIGNER</b></h1></button>
     </div>
@@ -138,7 +150,8 @@
   </div>
 
   <br>
-  <div>
+  <div style="background-color: lightgray;">
+    <a href="test"></a>
     <h1 style="font-family:cursive;text-align: center;"><b>TESTIMONIES</b></h1>
   </div>
 
@@ -173,8 +186,19 @@
       <span class="dot" onclick="currentSlide(2)"></span> 
       <span class="dot" onclick="currentSlide(3)"></span> 
     </div>
-
+<br>
     
+<div style="padding-top: 650px;">
+  <footer style="background-color: black;height:200px;display: flex;flex-direction: row;">
+      <p style="color: gray;margin-left: 50px;margin-top: 30px;font-size:40px;">Google</p><br>
+      <a style="padding-top: 10px;padding-left: 60px;color: white;" href=""><h1><b>Contact us</b></h1></a>
+      <a style="margin-left:2000px;margin-top:none ;color: gray;" class="policy" href="https://www.google.com/policies/"><h1><b>Privacy & policy</b></h1></a>
+      <!-- <img style="width: 60px;height: 50px;margin-top: 20px;margin-left: 20px;" src="006.png" alt="">
+      <img style="width: 50px;height: 40px;margin-top: 28px;" src="008.png" alt=""> -->
+  </footer>
+</div>
+
+
     <script>
         let slideIndex = 1;
         showSlides(slideIndex);
@@ -207,3 +231,27 @@
 </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+<!-- <div class="bottom">
+  <footer style="background-color: black;height: 800px;display: flex;">
+
+    <br>
+    <div>
+    <img style="width: 250px;height: 150px;margin-top: 20px;padding-left: 10px;" src="006.png" alt="">
+    <img style="width: 250px;height: 150px;margin-top: 20px;padding-left: 10px;" src="007.png" alt="">
+    <img style="width: 250px;height: 150px;margin-top: 20px;padding-left: 10px;" src="008.png" alt="">
+    <img style="width: 250px;height: 150px;margin-top: 20px;padding-left: 10px;" src="009.png" alt="">
+    <img style="width: 250px;height: 150px;margin-top: 20px;padding-left: 10px;" src="010.png" alt="">
+  </div>
+    <p style="color: gray;margin-left:1000px;margin-top: 30px;font-size:40px;margin-top: 700px;">Google</p>
+    <a style="margin-left:1000px;margin-top:700px;color: gray;" class="policy" href="https://www.google.com/policies/"><h1><b>Privacy & policy</b></h1></a>
+
+</footer>
+</div> -->
