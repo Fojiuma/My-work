@@ -69,21 +69,21 @@ color: lightgray;
     margin-left:7%;
     width: 600px;
     height: 500px;
-    background-image: url(/html/web.jpg);
+    background-image: url(/html/AI.jpg);
     background-size: contain;
 }
 .soft{
     margin-left:5%;
     width: 600px;
     height: 500px;
-    background-image: url(/html/web.jpg);
+    background-image: url(/html/Arts.jpg);
     background-size: contain;
 }
 .UI{
     margin-left:5%;
     width: 600px;
     height: 500px;
-    background-image: url(/html/web.jpg);
+    background-image: url(/html/START.jpg);
     background-size: contain;
     padding-top: 20px;
 }
@@ -91,7 +91,7 @@ color: lightgray;
     margin-left:7%;
     width: 600px;
     height: 500px;
-    background-image: url(/html/web.jpg);
+    background-image: url(/html/WEBXR.jpg);
     background-size: contain;
     padding-top: 20px;
 }
@@ -99,7 +99,7 @@ color: lightgray;
     margin-left:5%;
     width: 600px;
     height: 500px;
-    background-image: url(/html/web.jpg);
+    background-image: url(/images/img1.png);
     background-size: contain;
     padding-top: 20px;
 }
@@ -115,7 +115,7 @@ color: lightgray;
     margin-left:7%;
     width: 600px;
     height: 500px;
-    background-image: url(/html/web.jpg);
+    background-image: url(/images/img4.png);
     background-size: contain;
     padding-top: 20px;
 }
@@ -123,7 +123,7 @@ color: lightgray;
     margin-left:5%;
     width: 600px;
     height: 500px;
-    background-image: url(/html/web.jpg);
+    background-image: url(/images/img1.png);
     background-size: contain;
     padding-top: 20px;
 }
@@ -131,7 +131,7 @@ color: lightgray;
     margin-left:5%;
     width: 600px;
     height: 500px;
-    background-image: url(/html/web.jpg);
+    background-image: url(/html/img2.png);
     background-size: contain;
     padding-top: 20px;
 }
