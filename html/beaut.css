@@ -49,9 +49,10 @@ color: lightgray;
     width: 600px;
     height: 600px;
 }
-#experiences{
+.experiences{
     align-items: center;
     display: block; 
+    border-radius: 50px;
 }
 .trial{
     display: flex;
@@ -71,6 +72,7 @@ color: lightgray;
     height: 500px;
     background-image: url(/html/AI.jpg);
     background-size: contain;
+    border-radius: 50px;
 }
 .soft{
     margin-left:5%;
@@ -78,6 +80,7 @@ color: lightgray;
     height: 500px;
     background-image: url(/html/Arts.jpg);
     background-size: contain;
+    border-radius: 50px;
 }
 .UI{
     margin-left:5%;
@@ -86,6 +89,7 @@ color: lightgray;
     background-image: url(/html/START.jpg);
     background-size: contain;
     padding-top: 20px;
+    border-radius: 50px;
 }
 .mobile{
     margin-left:7%;
@@ -94,6 +98,7 @@ color: lightgray;
     background-image: url(/html/WEBXR.jpg);
     background-size: contain;
     padding-top: 20px;
+    border-radius: 50px;
 }
 .IT{
     margin-left:5%;
@@ -102,6 +107,7 @@ color: lightgray;
     background-image: url(/images/img1.png);
     background-size: contain;
     padding-top: 20px;
+     border-radius: 50px;
 }
 .security{
     margin-left:5%;
@@ -110,6 +116,7 @@ color: lightgray;
     background-image: url(/html/web.jpg);
     background-size: contain;
     padding-top: 20px;
+    border-radius: 50px;
 }
 .system{
     margin-left:7%;
@@ -118,6 +125,7 @@ color: lightgray;
     background-image: url(/images/img4.png);
     background-size: contain;
     padding-top: 20px;
+    border-radius: 50px;
 }
 .engine{
     margin-left:5%;
@@ -126,6 +134,7 @@ color: lightgray;
     background-image: url(/images/img1.png);
     background-size: contain;
     padding-top: 20px;
+    border-radius: 50px;
 }
 .hard{
     margin-left:5%;
@@ -134,4 +143,5 @@ color: lightgray;
     background-image: url(/html/img2.png);
     background-size: contain;
     padding-top: 20px;
+    border-radius: 50px; 
 }
