@@ -29,6 +29,7 @@ color: lightgray;
     color: lightyellow;
 }
 .log{
+
     padding-top: 30px;
     padding-left: 40px;
     width: fit-content;
@@ -36,6 +37,9 @@ color: lightgray;
     border: none;
     background-color:gray;
     font-size:16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .log:hover{
     color: coral;
@@ -53,6 +57,8 @@ color: lightgray;
     align-items: center;
     display: block; 
     border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .trial{
     display: flex;
@@ -67,7 +73,9 @@ color: lightgray;
     flex-direction: row;
 }
 #web{
-    margin-left:7%;
+    /* margin-left:7%; */
+    margin-left: auto;
+    margin-right: auto;
     width: 600px;
     height: 500px;
     background-image: url(/html/AI.jpg);
@@ -75,7 +83,9 @@ color: lightgray;
     border-radius: 50px;
 }
 .soft{
-    margin-left:5%;
+    /* margin-left:5%; */
+    margin-left: auto;
+    margin-right: auto;
     width: 600px;
     height: 500px;
     background-image: url(/html/Arts.jpg);
@@ -83,7 +93,9 @@ color: lightgray;
     border-radius: 50px;
 }
 .UI{
-    margin-left:5%;
+    /* margin-left:5%; */
+    margin-left: auto;
+    margin-right: auto;
     width: 600px;
     height: 500px;
     background-image: url(/html/START.jpg);
@@ -92,7 +104,9 @@ color: lightgray;
     border-radius: 50px;
 }
 .mobile{
-    margin-left:7%;
+    /* margin-left:7%; */
+    margin-left: auto;
+    margin-right: auto;
     width: 600px;
     height: 500px;
     background-image: url(/html/WEBXR.jpg);
@@ -101,7 +115,9 @@ color: lightgray;
     border-radius: 50px;
 }
 .IT{
-    margin-left:5%;
+    /* margin-left:5%; */
+    margin-left: auto;
+    margin-right: auto;
     width: 600px;
     height: 500px;
     background-image: url(/images/img1.png);
@@ -110,7 +126,9 @@ color: lightgray;
      border-radius: 50px;
 }
 .security{
-    margin-left:5%;
+    /* margin-left:5%; */
+    margin-left: auto;
+    margin-right: auto;
     width: 600px;
     height: 500px;
     background-image: url(/html/web.jpg);
@@ -119,7 +137,9 @@ color: lightgray;
     border-radius: 50px;
 }
 .system{
-    margin-left:7%;
+    /* margin-left:7%; */
+    margin-left: auto;
+    margin-right: auto;
     width: 600px;
     height: 500px;
     background-image: url(/images/img4.png);
@@ -128,7 +148,9 @@ color: lightgray;
     border-radius: 50px;
 }
 .engine{
-    margin-left:5%;
+    /* margin-left:5%; */
+    margin-left: auto;
+    margin-right: auto;
     width: 600px;
     height: 500px;
     background-image: url(/images/img1.png);
@@ -137,7 +159,9 @@ color: lightgray;
     border-radius: 50px;
 }
 .hard{
-    margin-left:5%;
+    /* margin-left:5%; */
+    margin-left: auto;
+    margin-right: auto;
     width: 600px;
     height: 500px;
     background-image: url(/html/img2.png);
