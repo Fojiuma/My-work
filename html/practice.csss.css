@@ -16,8 +16,30 @@
     justify-content: space-around; 
     
 } */
- body{
-    color: white;
+body{
+    color:#82a5ca;
+    margin: none;
+    text-align: center;
+ }
+ #hero{
     background-image: url(/images/0005.jpg);
     background-size: cover;
+    text-align: center;
+    padding: 10px 0 40px 0;
+    color:#82a5ca;
+ }
+ .btn{
+    padding: 6px 12px;
+    background-color: white;
+    border: none;
+ }
+ .join{
+    color: red;
+    text-align: center;
+ }
+ .explore{
+    border-bottom: 3px solid white;
+ }
+ .test{
+    text-shadow: 3px 0px black;
  }
