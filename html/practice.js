@@ -1,23 +1,83 @@
-let countEl = document.getElementById("count-el")
+// let firstname = "FOJIUMA"
+// let lastname = " LANGAYA"
+// let fullName = lastname + firstname;
 
-console.log(countEl)
+// console.log(fullName);
+// let mypoints = 3
 
-let count = 0;
+// function add3points() {
+// mypoints += 3
+// }
 
-function increment() {
-    count = count + 1;
-    countEl.innerText= count
+// function remove1point() {
+//     mypoints -= 1
+// }
 
-}
+// add3points()
+// add3points()
+// add3points()
+// remove1point()
+// remove1point()
 
-function save() {
+// console.log(mypoints)
 
-    console.log(count);
-}
+// let errorEl = document.getElementById(error)
+
+// function error() {
+//      errorEl.textContent = "Something went wrong, please try again"
+// }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let countEl = document.getElementById("count-el")
+// let saveEl = document.getElementById("save-el")
+
+// let count = 0;
+
+// function increment() {
+//     count += 1;
+//     countEl.innerText= count
+
+// }
+// // text content makes it easier to read than innerText
+// function save() {
+//     let counter = count + " - "
+//     saveEl.textContent += counter 
+//     countEl.textContent = 0;
+//     console.log(count);
+//     count = 0;
+// }
 
 // function number() {
 // console.log(42)
@@ -46,3 +106,15 @@ function save() {
 // incrementLap()
 
 // console.log(lapscompleted)
+
+// let welcomeEl = document.getElementById("welcome-el")
+
+// let name = "LANGAYA FOJIUMA"
+// let greeting = "Welcome back "
+
+// welcomeEl.innerHTML = greeting + name;
+
+
+
+
+ 

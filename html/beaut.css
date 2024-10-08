@@ -11,6 +11,14 @@
     padding-left: 200px;
 }
 
+.test{
+    font-size: larger;
+    font: 800;
+    color: black;
+    border-bottom: none;
+    padding-top: 100px;
+}
+
 #identity:hover {
     color: lightgray;
 }
@@ -36,7 +44,6 @@
 }
 
 .log {
-
     padding-top: 30px;
     padding-left: 40px;
     width: fit-content;
@@ -107,6 +114,7 @@
     background-image: url(/html/Arts.jpg);
     background-size: contain;
     border-radius: 50px;
+    /* filter: blur(8px); */
 }
 
 .UI {
