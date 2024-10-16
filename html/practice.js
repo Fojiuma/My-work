@@ -66,6 +66,27 @@ function newCard() {
       }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // let hasSolvedChallenge = false
 // let hasHintLeft = false
 
