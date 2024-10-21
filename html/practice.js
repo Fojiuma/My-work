@@ -1,91 +1,113 @@
-let hasBlackJack = false;
-let isAlive = false;
-let sum = 0;
-let cards;
-let message = "";
-let CardsEl = document.getElementById("cards-el");
-let sumEl = document.querySelector("#sum-el");
-let messageEl = document.getElementById("message-el");
-let start = document.getElementById("start-el")
+// let player = {
+//     name: "Fojiuma",
+//   chips: "145"
+//  }
 
-let player = {
-   name: "Fojiuma",
- chips: "145"
+// let hasBlackJack = false;
+// let isAlive = false;
+// let sum = 0;
+// let cards;
+// let message = "";
+// let CardsEl = document.getElementById("cards-el");
+// let sumEl = document.querySelector("#sum-el");
+// let messageEl = document.getElementById("message-el");
+// let start = document.getElementById("start-el")
+// let playerEl = document.getElementById("player-el")
+
+
+// playerEl.textContent = player.name + ": $" +player.chips
+
+
+
+// console.log(cards);
+
+// function getRandomCard() {
+//   let randomNmunber = Math.floor(Math.random() * 13) + 1;
+//   if (randomNmunber > 10) {
+//     return 10;
+//   } else if (randomNmunber === 1) {
+//     return 11;
+//   } else {
+//     return randomNmunber;
+//   }
+// }
+
+// function startGame() {
+//   isAlive = true;
+//   let firstcard = getRandomCard();
+//   let secondcard = getRandomCard();
+//   cards = [firstcard, secondcard];
+//   sum = firstcard + secondcard;
+//   renderGame();
+// }
+// function renderGame() {
+//   CardsEl.textContent = "Cards: ";
+
+//   for (i = 0; i < cards.length; i++) {
+//     CardsEl.textContent += cards[i] + " ";
+//   }
+
+//   sumEl.textContent = "Sum: " + sum;
+//   if (sum < 21) {
+//     message = "Do you want to draw a new card?";
+//   } else if (sum === 21) {
+//     message = "You've got black jack";
+//     hasBlackJack = true;
+//   } else if (sum > 21) {
+//     message = "YOU ARE OUT OF THE GAME!";
+//     isAlive = false;
+//   }
+//   messageEl.textContent = message;
+// }
+
+// function newCard() {
+//     if (isAlive === true && hasBlackJack === false) {
+//         let card = getRandomCard();
+//   sum = sum + card;
+//   cards.push(card);
+//   renderGame();
+//       }
+// }
+// let person = {
+// name: "fojiuma",
+// age: 21,
+// country: "Nigerian"
+// }
+
+// function logData(){
+//     console.log(person.name + " is " + person.age + " Years old and lives in " + person.country ) 
+// }
+// logData()
+
+let age = 80;
+
+if (age < 6){
+    console.log("Free pass")
+}else if(age > 6 && age < 18){
+console.log("Child discount")
+}else if(age > 17 && age < 27){
+    console.log("Student Discount")
+}else if(age > 26 && age < 67){
+    console.log("Full price")
+}else{
+    console.log("Senior citizen discount")
 }
 
-let playerEl = document.getElementById("player-el")
-playerEl.textContent = player.name + ": $" +player.chips
-
-console.log(cards);
-
-function getRandomCard() {
-  let randomNmunber = Math.floor(Math.random() * 13) + 1;
-  if (randomNmunber > 10) {
-    return 10;
-  } else if (randomNmunber === 1) {
-    return 11;
-  } else {
-    return randomNmunber;
-  }
-}
-
-function startGame() {
-  isAlive = true;
-  let firstcard = getRandomCard();
-  let secondcard = getRandomCard();
-  cards = [firstcard, secondcard];
-  sum = firstcard + secondcard;
-  renderGame();
-}
-function renderGame() {
-  CardsEl.textContent = "Cards: ";
-
-  for (i = 0; i < cards.length; i++) {
-    CardsEl.textContent += cards[i] + " ";
-  }
-
-  sumEl.textContent = "Sum: " + sum;
-  if (sum < 21) {
-    message = "Do you want to draw a new card?";
-  } else if (sum === 21) {
-    message = "You've got black jack";
-    hasBlackJack = true;
-  } else if (sum > 21) {
-    message = "YOU ARE OUT OF THE GAME!";
-    isAlive = false;
-  }
-  messageEl.textContent = message;
-}
-
-function newCard() {
-    if (isAlive === true && hasBlackJack === false) {
-        let card = getRandomCard();
-  sum = sum + card;
-  cards.push(card);
-  renderGame();
-      }
-}
 
 
 
 
 
 
+// let castleListing = {
+// title: "Live like a king",
+// price: 190,
+// isSuperHost: true,
+// images: ["img/castle.png", "img/castle2.png"]
+// }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// console.log(castleListing.price)
+// console.log(castleListing.images)
 
 // let hasSolvedChallenge = false
 // let hasHintLeft = false
