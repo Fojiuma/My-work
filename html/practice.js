@@ -68,6 +68,49 @@
 //   renderGame();
 //       }
 // }
+
+
+
+
+// let largeCountries = [ "China", "India", "USA", "Indonesia", "Pakistan"]
+
+// for (i = 0; i<largeCountries.length; i++){
+//     console.log("- " + largeCountries[i])
+// }
+
+// let dayOfMonth = 31
+// let weekDay = "Friday"
+// if (weekDay === "Friday" && dayOfMonth === 13 ) {
+// console.log("spooky face")
+// }
+
+let hands = ["rock", "paper", "scissor"]
+
+function shoot(){
+   let randomhands = Math.floor(Math.random() * 3)
+return hands[randomhands]
+}
+console.log(shoot())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // let person = {
 // name: "fojiuma",
 // age: 21,
@@ -79,19 +122,19 @@
 // }
 // logData()
 
-let age = 80;
+// let age = 80;
 
-if (age < 6){
-    console.log("Free pass")
-}else if(age > 6 && age < 18){
-console.log("Child discount")
-}else if(age > 17 && age < 27){
-    console.log("Student Discount")
-}else if(age > 26 && age < 67){
-    console.log("Full price")
-}else{
-    console.log("Senior citizen discount")
-}
+// if (age < 6){
+//     console.log("Free pass")
+// }else if(age > 6 && age < 18){
+// console.log("Child discount")
+// }else if(age > 17 && age < 27){
+//     console.log("Student Discount")
+// }else if(age > 26 && age < 67){
+//     console.log("Full price")
+// }else{
+//     console.log("Senior citizen discount")
+// }
 
 
 
