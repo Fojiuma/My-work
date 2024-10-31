@@ -1,8 +1,47 @@
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#input-el {
+  width: 100%;
+  padding: 10px, 10px;
+  box-sizing: border-box;
+  border: 1px solid #5f9341;
+  margin-bottom: 4px;
+}
+
+#save-el {
+  padding: 10px, 20px;
+  background-color: #5f9341;
+  color: white;
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* background: linearGradient(45deg 
 rgba(2, 2, 2,0.75),
 rgba(245,255, 255, 0.75)),
 url(/your image) */
-
 
 /* /* .avatar{
     width: 250px;
@@ -45,7 +84,9 @@ url(/your image) */
     text-shadow: 3px 0px black;
  } */
 
-body {
+/*FOR THE BLACKJACK GAME
+
+/* body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 background-color: green;
 text-align: center;
@@ -73,12 +114,7 @@ padding-bottom: 5px;
 font-weight: bold;
 border: none;
 border-radius: 2px;
-}
-
-
-
-
-
+} */
 
 /* h1, h2, h4, p{
    text-shadow: 0px 0px 1px black;
@@ -127,4 +163,3 @@ border-radius: 2px;
  .gift-img:hover{
    background-image: url(/images/007.png);
  } */
-  

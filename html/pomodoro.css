@@ -24,3 +24,18 @@
     padding:10px 15px;
     border: 2px gray solid;
 }
+
+#session-minus{
+    padding: 10px, 15px;
+    border:2px gray solid ;
+}
+
+#session-length{
+    text-align: center;
+}
+
+.sessions{
+    text-align: center;
+    margin-left: 41%;
+    display: flex;
+}

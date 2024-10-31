@@ -1,3 +1,84 @@
+function click() {
+   console.log("Button clicked")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // let player = {
 //     name: "Fojiuma",
 //   chips: "145"
@@ -84,31 +165,13 @@
 // console.log("spooky face")
 // }
 
-let hands = ["rock", "paper", "scissor"]
+// let hands = ["rock", "paper", "scissor"]
 
-function shoot(){
-   let randomhands = Math.floor(Math.random() * 3)
-return hands[randomhands]
-}
-console.log(shoot())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// function shoot(){
+//    let randomhands = Math.floor(Math.random() * 3)
+// return hands[randomhands]
+// }
+// console.log(shoot())
 
 
 // let person = {
