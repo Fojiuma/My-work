@@ -1,3 +1,26 @@
+#break-length{
+    text-align: center;
+    margin: 0%, auto;
+}
+
 .breaks{
-    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0%, auto;
+}
+
+#number-between{
+    margin-left:25px;
+    margin-right: 25px;
+}
+
+#break-{
+    padding:10px 15px;
+    border: 2px gray solid;
+}
+
+#break-plus{
+    padding:10px 15px;
+    border: 2px gray solid;
 }
