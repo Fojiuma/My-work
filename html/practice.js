@@ -1,12 +1,21 @@
-function click() {
-   console.log("Button clicked from onclick attribute")
+let myLeads = ["fojiuma", "dama", "emmanuel"];
+const inputEl = document.getElementById("input-el");
+const inputBtn = document.getElementById("save-el");
+const ulEl = document.getElementById("ul-el");
+
+inputBtn.addEventListener("click", function () {
+  myLeads.push(inputEl.value); //to get the value of the input and store it in the array
+  console.log(myLeads);
+});
+
+
+for (let i = 0; i < 3; i++) {
+//   console.log(myLeads[i]);
+ulEl.innerHTML += "<li>" + myLeads[i] + "</li>" //Taking items from th array and logging them out on nthe screen
 }
 
-let inputBtn  = document.getElementById("save-el")
+ 
 
-inputBtn.addEventListener("click", function(){
-console.log("Button clicked from addEventListener")
-})
 
 
 
@@ -22,66 +31,11 @@ console.log("Button clicked from addEventListener")
 
 
 
+// let grabBox = document.getElementById("box")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// grabBox.addEventListener("click", function(){
+//    console.log("I want to Open the Box ")
+// })
 
 // let player = {
 //     name: "Fojiuma",
@@ -99,10 +53,7 @@ console.log("Button clicked from addEventListener")
 // let start = document.getElementById("start-el")
 // let playerEl = document.getElementById("player-el")
 
-
 // playerEl.textContent = player.name + ": $" +player.chips
-
-
 
 // console.log(cards);
 
@@ -154,9 +105,6 @@ console.log("Button clicked from addEventListener")
 //       }
 // }
 
-
-
-
 // let largeCountries = [ "China", "India", "USA", "Indonesia", "Pakistan"]
 
 // for (i = 0; i<largeCountries.length; i++){
@@ -177,7 +125,6 @@ console.log("Button clicked from addEventListener")
 // }
 // console.log(shoot())
 
-
 // let person = {
 // name: "fojiuma",
 // age: 21,
@@ -185,7 +132,7 @@ console.log("Button clicked from addEventListener")
 // }
 
 // function logData(){
-//     console.log(person.name + " is " + person.age + " Years old and lives in " + person.country ) 
+//     console.log(person.name + " is " + person.age + " Years old and lives in " + person.country )
 // }
 // logData()
 
@@ -202,12 +149,6 @@ console.log("Button clicked from addEventListener")
 // }else{
 //     console.log("Senior citizen discount")
 // }
-
-
-
-
-
-
 
 // let castleListing = {
 // title: "Live like a king",
