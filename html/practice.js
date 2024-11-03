@@ -1,23 +1,39 @@
-let myLeads = ["fojiuma", "dama", "emmanuel"];
+let myLeads = []
 const inputEl = document.getElementById("input-el");
 const inputBtn = document.getElementById("save-el");
 const ulEl = document.getElementById("ul-el");
 
 inputBtn.addEventListener("click", function () {
   myLeads.push(inputEl.value); //to get the value of the input and store it in the array
-  console.log(myLeads);
+  inputEl.value = ""
+  renderLeads();
 });
 
+function renderLeads() {
+   let listItems = ""
+  for (let i = 0; i < myLeads.length; i++) {
+    listItems +=` 
+    "<li>
+          <a target='_blank' href='${myLeads[i]}'>" + myLeads[i] + "<a/>
+    </li>";
+    ` 
+    
+    
+    //Taking items from thE array and logging them out on nthe screen
+    //innerHtml makes use of html tags inside of javascript and lets you manipulate them without doing it from the html file directly
+    // "+=" lets you add a new element without losing what is already in the innerHTML
 
-for (let i = 0; i < 3; i++) {
-//   console.log(myLeads[i]);
-ulEl.innerHTML += "<li>" + myLeads[i] + "</li>" //Taking items from th array and logging them out on nthe screen
+    //THIS DOES THE SAME THING AS INNERHTML SHIT WRITTEN ABOVE
+    // const li = document.createElement("li")
+    // li.textContent = myLeads[i]
+    // ulEl.append(li)
+  }
+  ulEl.innerHTML = listItems;
 }
 
+
+
  
-
-
-
 
 
 
