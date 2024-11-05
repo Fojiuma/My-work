@@ -1,26 +1,109 @@
-let myLeads = []
-const inputEl = document.getElementById("input-el");
-const inputBtn = document.getElementById("save-el");
-const ulEl = document.getElementById("ul-el");
+let player = {
+    name: "Fojiuma",
+  chips: "145"
+ }
 
-inputBtn.addEventListener("click", function () {
-  myLeads.push(inputEl.value); //to get the value of the input and store it in the array
-  inputEl.value = ""
-  renderLeads();
-});
+let hasBlackJack = false;
+let isAlive = false;
+let sum = 0;
+let cards;
+let message = "";
+let CardsEl = document.getElementById("cards-el");
+let sumEl = document.querySelector("#sum-el");
+let messageEl = document.getElementById("message-el");
+let start = document.getElementById("start-el")
+let playerEl = document.getElementById("player-el")
 
-function renderLeads() {
-   let listItems = ""
-  for (let i = 0; i < myLeads.length; i++) {
-    listItems +=` 
-    <li>
-          <a target='_blank' href='${myLeads[i]}'> 
-              ${myLeads[i]}
-           <a/>
-           </li>";
-    `  
+playerEl.textContent = player.name + ": $" +player.chips
+
+console.log(cards);
+
+function getRandomCard() {
+  let randomNmunber = Math.floor(Math.random() * 13) + 1;
+  if (randomNmunber > 10) {
+    return 10;
+  } else if (randomNmunber === 1) {
+    return 11;
+  } else {
+    return randomNmunber;
+  }
+}
+
+function startGame() {
+  isAlive = true;
+  let firstcard = getRandomCard();
+  let secondcard = getRandomCard();
+  cards = [firstcard, secondcard];
+  sum = firstcard + secondcard;
+  renderGame();
+}
+function renderGame() {
+  CardsEl.textContent = "Cards: ";
+
+  for (i = 0; i < cards.length; i++) {
+    CardsEl.textContent += cards[i] + " ";
+  }
+
+  sumEl.textContent = "Sum: " + sum;
+  if (sum < 21) {
+    message = "Do you want to draw a new card?";
+  } else if (sum === 21) {
+    message = "You've got black jack";
+    hasBlackJack = true;
+  } else if (sum > 21) {
+    message = "YOU ARE OUT OF THE GAME!";
+    isAlive = false;
+  }
+  messageEl.textContent = message;
+}
+
+function newCard() {
+    if (isAlive === true && hasBlackJack === false) {
+        let card = getRandomCard();
+  sum = sum + card;
+  cards.push(card);
+  renderGame();
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let myLeads = []
+// const inputEl = document.getElementById("input-el");
+// const inputBtn = document.getElementById("save-el");
+// const ulEl = document.getElementById("ul-el");
+
+// inputBtn.addEventListener("click", function () {
+//   myLeads.push(inputEl.value); //to get the value of the input and store it in the array
+//   inputEl.value = ""
+//   renderLeads();
+// });
+
+// function renderLeads() {
+//    let listItems = ""
+//   for (let i = 0; i < myLeads.length; i++) {
+//     listItems +=` 
+//     <li>
+//           <a target='_blank' href='${myLeads[i]}'> 
+//               ${myLeads[i]}
+//            <a/>
+//            </li>";
+//     `  
     
     
+
     //Taking items from thE array and logging them out on nthe screen
     //innerHtml makes use of html tags inside of javascript and lets you manipulate them without doing it from the html file directly
     // "+=" lets you add a new element without losing what is already in the innerHTML
@@ -29,13 +112,12 @@ function renderLeads() {
     // const li = document.createElement("li")
     // li.textContent = myLeads[i]
     // ulEl.append(li)
-  }
-  ulEl.innerHTML = listItems;
-}
+//   }
+//   ulEl.innerHTML = listItems;
+// }
 
 
 
- 
 
 
 
@@ -55,73 +137,7 @@ function renderLeads() {
 //    console.log("I want to Open the Box ")
 // })
 
-// let player = {
-//     name: "Fojiuma",
-//   chips: "145"
-//  }
 
-// let hasBlackJack = false;
-// let isAlive = false;
-// let sum = 0;
-// let cards;
-// let message = "";
-// let CardsEl = document.getElementById("cards-el");
-// let sumEl = document.querySelector("#sum-el");
-// let messageEl = document.getElementById("message-el");
-// let start = document.getElementById("start-el")
-// let playerEl = document.getElementById("player-el")
-
-// playerEl.textContent = player.name + ": $" +player.chips
-
-// console.log(cards);
-
-// function getRandomCard() {
-//   let randomNmunber = Math.floor(Math.random() * 13) + 1;
-//   if (randomNmunber > 10) {
-//     return 10;
-//   } else if (randomNmunber === 1) {
-//     return 11;
-//   } else {
-//     return randomNmunber;
-//   }
-// }
-
-// function startGame() {
-//   isAlive = true;
-//   let firstcard = getRandomCard();
-//   let secondcard = getRandomCard();
-//   cards = [firstcard, secondcard];
-//   sum = firstcard + secondcard;
-//   renderGame();
-// }
-// function renderGame() {
-//   CardsEl.textContent = "Cards: ";
-
-//   for (i = 0; i < cards.length; i++) {
-//     CardsEl.textContent += cards[i] + " ";
-//   }
-
-//   sumEl.textContent = "Sum: " + sum;
-//   if (sum < 21) {
-//     message = "Do you want to draw a new card?";
-//   } else if (sum === 21) {
-//     message = "You've got black jack";
-//     hasBlackJack = true;
-//   } else if (sum > 21) {
-//     message = "YOU ARE OUT OF THE GAME!";
-//     isAlive = false;
-//   }
-//   messageEl.textContent = message;
-// }
-
-// function newCard() {
-//     if (isAlive === true && hasBlackJack === false) {
-//         let card = getRandomCard();
-//   sum = sum + card;
-//   cards.push(card);
-//   renderGame();
-//       }
-// }
 
 // let largeCountries = [ "China", "India", "USA", "Indonesia", "Pakistan"]
 
