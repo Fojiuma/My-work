@@ -1,42 +1,4 @@
-body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-background-color: green;
-text-align: center;
-}
-
-h1 {
-  color: goldenrod;
-  text-align: center;
-}
-
-#message-el {
-font-style: italic;
-}
-
-#texts {
-text-align: center;
-}
-
-button{
-   color: #016f32;
-width: 150px;
-background: goldenrod;
-padding-top: 5px;
-padding-bottom: 5px;
-font-weight: bold;
-border: none;
-border-radius: 2px;
-}
-
-
-
-
-
-
-
-
-
-
+/* 
 /* body {
   margin: 0;
   padding: 10px;
@@ -52,7 +14,36 @@ border-radius: 2px;
 
 
 
+ body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: green;
+  text-align: center;
+}
 
+h1 {
+  color: goldenrod;
+  text-align: center;
+}
+
+#message-el {
+  font-style: italic;
+}
+
+#texts {
+  text-align: center;
+}
+
+button {
+  color: #016f32;
+  width: 150px;
+  background: goldenrod;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+} */
 
 
 
@@ -81,25 +72,10 @@ li {
   margin-top: 5px;
 }
 
-li a {
-color: #5f9341; */
+/* li a {
+color: #5f9341; */ 
 /* styling a particular element */
 /* } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* background: linearGradient(45deg 
 rgba(2, 2, 2,0.75),

@@ -1,7 +1,7 @@
 let player = {
-    name: "Fojiuma",
-  chips: "145"
- }
+  name: "Fojiuma",
+  chips: "145",
+};
 
 let hasBlackJack = false;
 let isAlive = false;
@@ -11,10 +11,10 @@ let message = "";
 let CardsEl = document.getElementById("cards-el");
 let sumEl = document.querySelector("#sum-el");
 let messageEl = document.getElementById("message-el");
-let start = document.getElementById("start-el")
-let playerEl = document.getElementById("player-el")
+let start = document.getElementById("start-el");
+let playerEl = document.getElementById("player-el");
 
-playerEl.textContent = player.name + ": $" +player.chips
+playerEl.textContent = player.name + ": $" + player.chips;
 
 console.log(cards);
 
@@ -58,27 +58,13 @@ function renderGame() {
 }
 
 function newCard() {
-    if (isAlive === true && hasBlackJack === false) {
-        let card = getRandomCard();
-  sum = sum + card;
-  cards.push(card);
-  renderGame();
-      }
+  if (isAlive === true && hasBlackJack === false) {
+    let card = getRandomCard();
+    sum = sum + card;
+    cards.push(card);
+    renderGame();
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // let myLeads = []
 // const inputEl = document.getElementById("input-el");
@@ -94,50 +80,31 @@ function newCard() {
 // function renderLeads() {
 //    let listItems = ""
 //   for (let i = 0; i < myLeads.length; i++) {
-//     listItems +=` 
+//     listItems +=`
 //     <li>
-//           <a target='_blank' href='${myLeads[i]}'> 
+//           <a target='_blank' href='${myLeads[i]}'>
 //               ${myLeads[i]}
 //            <a/>
 //            </li>";
-//     `  
-    
-    
+//     `
 
-    //Taking items from thE array and logging them out on nthe screen
-    //innerHtml makes use of html tags inside of javascript and lets you manipulate them without doing it from the html file directly
-    // "+=" lets you add a new element without losing what is already in the innerHTML
+//Taking items from thE array and logging them out on nthe screen
+//innerHtml makes use of html tags inside of javascript and lets you manipulate them without doing it from the html file directly
+// "+=" lets you add a new element without losing what is already in the innerHTML
 
-    //THIS DOES THE SAME THING AS INNERHTML SHIT WRITTEN ABOVE
-    // const li = document.createElement("li")
-    // li.textContent = myLeads[i]
-    // ulEl.append(li)
+//THIS DOES THE SAME THING AS INNERHTML SHIT WRITTEN ABOVE
+// const li = document.createElement("li")
+// li.textContent = myLeads[i]
+// ulEl.append(li)
 //   }
 //   ulEl.innerHTML = listItems;
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // let grabBox = document.getElementById("box")
 
 // grabBox.addEventListener("click", function(){
 //    console.log("I want to Open the Box ")
 // })
-
-
 
 // let largeCountries = [ "China", "India", "USA", "Indonesia", "Pakistan"]
 
