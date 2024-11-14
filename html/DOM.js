@@ -27,3 +27,21 @@
 
 
 
+const buttonTwo = document.querySelector('btn-2')
+
+function alertBtn (){
+    alert('I also Love Javascript')
+}
+
+buttonTwo.addEventListener("click", alertBtn)
+
+//Change the bg color on mouseover
+
+const newBackgroundColor = document.querySelector('.btn-3');
+
+function changeBgColor() {
+    newBackgroundColor.style.backgroundColor = 'blue'
+
+};
+newBackgroundColor.addEventListener("mouseover",changeBgColor)
+
