@@ -23,6 +23,7 @@
 // li.remove();
 //remove the element from the html elements
 
+//using the alert() 
 const buttonTwo = document.querySelector("btn-2");
 
 function alertBtn() {
