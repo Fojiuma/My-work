@@ -40,3 +40,9 @@ function changeBgColor() {
   newBackgroundColor.style.backgroundColor = "blue";
 }
 newBackgroundColor.addEventListener("mouseover", changeBgColor);
+
+
+document.querySelector("btn-3").addEventListener
+("click", function(e) {
+  console.log(e.target.innerText = "clicked");
+},true)
