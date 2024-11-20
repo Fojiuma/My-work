@@ -1,3 +1,48 @@
+let btn = document.querySelector('#new-quote');
+let quote = document.querySelector('.quote');
+let person = document.querySelector('.person')
+
+const quotes = [{
+   
+}]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //getElementById()
 //getElementByClassName()
 //getElementByTagName()
@@ -24,25 +69,34 @@
 //remove the element from the html elements
 
 //using the alert() 
-const buttonTwo = document.querySelector("btn-2");
+// const buttonTwo = document.querySelector("btn-2");
 
-function alertBtn() {
-  alert("I also Love Javascript");
-}
+// function alertBtn() {
+//   alert("I also Love Javascript");
+// }
 
-buttonTwo.addEventListener("click", alertBtn);
+// buttonTwo.addEventListener("click", alertBtn);
 
 //Change the bg color on mouseover
 
-const newBackgroundColor = document.querySelector(".btn-3");
+// const newBackgroundColor = document.querySelector(".btn-3");
 
-function changeBgColor() {
-  newBackgroundColor.style.backgroundColor = "blue";
-}
-newBackgroundColor.addEventListener("mouseover", changeBgColor);
+// function changeBgColor() {
+//   newBackgroundColor.style.backgroundColor = "blue";
+// }
+// newBackgroundColor.addEventListener("mouseover", changeBgColor);
 
 
-document.querySelector("btn-3").addEventListener
-("click", function(e) {
-  console.log(e.target.innerText = "clicked");
-},true)
+// document.querySelector("btn-3").addEventListener
+// ("click", function(e) {
+//   console.log(e.target.innerText = "clicked");
+// },true) 
+
+//PreventDefault() method stops the default setting placed on any element
+
+//Event delegation allows you to add a SINGLE event listener to a parent element that adds it to all of its present AND future descendants that matcha selector
+
+
+//MATCHES() method is used to check a condition if the selected element matches the styling we want to apply.
+
+
