@@ -6,34 +6,44 @@ body {
     align-items: center;
 }
 
-.accordian {
+.accordion {
      width: 65%;
      background-color: white;
      padding: 30px;
      border-radius: 30px;
 }
 
-.accordian .accordian-title {
+.accordion .accordion-title {
     margin-bottom: 30px;
     text-align: center;
 }
 
-.accordian .content-container .question {
+.accordion .content-container .question {
     padding: 18px 0px;
     font-size: 22px;
-    cursor: pointer;
+    cursor: pointer; 
     border-bottom: 1px solid black;
 
     position: relative;
 }
 
-.accordian .content-container .question::after {
+.accordion .content-container .question::after {
     content: '+';
 
     position: absolute;
     right: -5px;
 }
 
+.accordion .content-container .answer {
+    padding-top: 15px;
+    font-size: 22px;
+    line-height: 1.5;
+    width: 100%;
+    
+    height: 0px;
+    overflow: hidden;
+    transition: .5s;
+}
 
 
 
