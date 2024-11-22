@@ -45,8 +45,21 @@ body {
     transition: .5s;
 }
 
+/* JAVASCRIPT STYLING */
+ .accordion .content-container.active .answer {
+    height: 150px;
+ }
 
+ .accordion .content-container.content-container.active .question {
+    font-size: 18px;
+    transition: .5s;
+ }
 
+ .accordion .content-container.active .question::after {
+    content: '-';
+    font-size: 30px;
+    transition: .5s;
+ }
 
 
 
