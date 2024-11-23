@@ -1,11 +1,3 @@
-const accordion = document.getElementsByClassName('content-container');
-
-for (i = 0; i < accordion.length; i++ ){
-
-  accordion[i].addEventListener('click', function () {
-    this.classList.toggle('active');    
-  })
-}
 
 
 
@@ -44,6 +36,37 @@ for (i = 0; i < accordion.length; i++ ){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//ACCORDION JAVASCRIPT
+// const accordion = document.getElementsByClassName('content-container');
+
+// for (i = 0; i < accordion.length; i++ ){
+
+//   accordion[i].addEventListener('click', function () {
+//     this.classList.toggle('active');    
+//   })
+// }
 
 //MODAL DEVELOPEMENT
 // let openBtn = document.getElementById('open-btn');
