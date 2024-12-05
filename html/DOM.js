@@ -27,19 +27,19 @@ addTask.addEventListener('click', function(){
         alert('Please Enter a Task');
 
     }else {
-        taskContainer.appendChild(task);
+        taskContainer.appendChild(task); 
     }
-
+ 
     inputTask.value = "";
 
     checkButton.addEventListener('click', function(){
         checkButton.parentElement.style.textDecoration = "line-through";
 
     })
-    deleteButton.addEventListener('click', function(){
+    deleteButton.addEventListener('click', function(e){
         let target = e.target;
 
-        target.parentElement.parentElement.remove();
+        target.parentElement.remove();
     })
 }); 
 

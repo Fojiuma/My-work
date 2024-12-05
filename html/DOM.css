@@ -12,7 +12,7 @@ body {
     background: white;
     border-radius: 20px;
     box-shadow: 0 0 3px;
-    display: flex;
+    display: block;
     margin-bottom: 20px;
 }
 
@@ -40,14 +40,17 @@ input {
     color: white;
 }
 
-/*  */
+/* Styling for task which get added to to-do list*/
 .task{
     width: 100%;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 3px;
+
     padding: 5px;
     margin-bottom: 5px;
+    margin-top: 20px;
+
     display: flex;
     justify-content: space-between;
 }
