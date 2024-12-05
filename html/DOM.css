@@ -40,6 +40,7 @@ input {
     color: white;
 }
 
+/*  */
 .task{
     width: 100%;
     background-color: white;
@@ -80,7 +81,6 @@ input {
 
 .task .deleteTask {
     color: red;
-    margin-right: 5px;
     border: solid 2px red;
     font-size: 1.3rem;
 }
@@ -89,7 +89,6 @@ input {
     background-color: red;
     color: white;
 }
-
 
 
 

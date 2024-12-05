@@ -1,5 +1,5 @@
 const addTask = document.getElementById('add-task');
-const taskContainer = document.getElementById('task-container');
+const taskContainer = document.getElementById('add-task-container');
 const inputTask = document.getElementById('input-task');
 
 
@@ -30,8 +30,18 @@ addTask.addEventListener('click', function(){
         taskContainer.appendChild(task);
     }
 
+    inputTask.value = "";
 
-});
+    checkButton.addEventListener('click', function(){
+        checkButton.parentElement.style.textDecoration = "line-through";
+
+    })
+    deleteButton.addEventListener('click', function(){
+        let target = e.target;
+
+        target.parentElement.parentElement.remove();
+    })
+}); 
 
 
 
