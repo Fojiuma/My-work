@@ -1,4 +1,4 @@
-body {
+/* body {
     height: 100vh;
     background: url(START.jpg) no-repeat center center/cover;
     display: flex;
@@ -38,10 +38,10 @@ input {
 #add-task:hover {
     background-color: green;
     color: white;
-}
+} */
 
 /* Styling for task which get added to to-do list*/
-.task{
+/* .task{
     width: 100%;
     background-color: white;
     border-radius: 10px;
@@ -91,7 +91,7 @@ input {
 .task .deleteTask:hover{
     background-color: red;
     color: white;
-}
+} */
 
 
 
