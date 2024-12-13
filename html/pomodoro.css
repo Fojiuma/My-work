@@ -4,47 +4,68 @@ body {
 
 }
 
-.breaks{
+.breaks, .sessions{
     display: block;
     justify-content: center;
     text-align: center;
     margin-top: 20px;
 }
 
-#break-{
+#break-minus{
     margin: 10px 10px;
-    padding: 20px 20px;
+    padding: 10px 10px;
     font-size: 1.1rem;
     border-radius: 10px;
     box-shadow:0 0 1px black ;
+    transition: .3s;
+}
+
+#break-minus:hover{
+    background:black;
+    color: white;
 }
 
 #break-plus{
     margin: 10px 10px;
-    padding: 20px 20px;
+    padding: 10px 10px;
     font-size: 1.1rem;
     border-radius: 10px;
     box-shadow:0 0 1px black ;
+    transition: .3s;
 }
 
-.break-numbers{
+#break-plus:hover{
+    background:black;
+    color: white;
+}
+
+.break-numbers, .session-numbers{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
-#session-minus{
-    padding: 10px, 15px;
-    border:2px gray solid ;
+#session-minus, #session-plus{
+    margin: 10px 10px;
+    padding: 10px 10px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    box-shadow:0 0 1px black ;
+    transition: .3s;
+}
+
+#session-minus:hover{
+    background: black;
+    color: white;
+}
+
+#session-plus:hover{
+    background: black;
+    color: white;
 }
 
 #session-length{
     text-align: center;
 }
 
-.sessions{
-    text-align: center;
-    margin-left: 41%;
-    display: flex;
-}
