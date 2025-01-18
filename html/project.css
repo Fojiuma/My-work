@@ -11,4 +11,18 @@ body {
     align-items: center;
 }
 
+.inputs {
+    display: block;
+}
 
+#Username {
+    border-radius: 5px;
+    padding: 15px 10px;
+    border: 1px solid black;
+}
+
+#password{
+    border-radius: 5px;
+    padding: 15px 10px;
+    border: 1px solid black;
+}
