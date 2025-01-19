@@ -25,4 +25,13 @@ body {
     border-radius: 5px;
     padding: 15px 10px;
     border: 1px solid black;
+    transition: .5s;
+    color: white;
+    background: transparent;
+    box-shadow: 0 0 3px black;
+}
+
+#password:hover {
+    background-color: white;
+    color: black;
 }
