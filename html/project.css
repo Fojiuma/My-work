@@ -11,14 +11,35 @@ body {
     align-items: center;
 }
 
+h1{
+    margin: 30px;
+}
+
+.texts{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
 .inputs {
     display: block;
+    margin: 20px;
 }
 
 #Username {
     border-radius: 5px;
     padding: 15px 10px;
     border: 1px solid black;
+    transition: .3s;
+    color: black;
+    background:transparent;
+    box-shadow: 0 0 3px;
+    font-size: 1.1rem;
+}
+
+#Username:hover {
+    background-color: black;
+    color: white;
 }
 
 #password{
@@ -26,12 +47,14 @@ body {
     padding: 15px 10px;
     border: 1px solid black;
     transition: .5s;
-    color: white;
+    color: black;
     background: transparent;
     box-shadow: 0 0 3px black;
+    font-size: 1.1rem;
 }
 
-#password:hover {
-    background-color: white;
-    color: black;
+#password:hover{
+    background-color: black;
+    color: white;
 }
+
