@@ -9,9 +9,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('START.jpg') no-repeat center center fixed;
+    background-image: url(START.jpg);
     background-size: cover;
-    color: white;
+     color: white;
 }
 
 h1{
@@ -29,10 +29,11 @@ h1{
 .texts {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
-    padding: 2rem;
+    padding: 30px;
     width: 300px;
     box-shadow: 0 0 10px rgba(red, green, blue, 0.2);
     position: relative;
+    backdrop-filter: blur(10px);
 }
 
 .inputs {
@@ -49,6 +50,7 @@ h1{
     background:transparent;
     box-shadow: 0 0 3px;
     font-size: 1.1rem;
+    margin-bottom: 10px;
 }
 
 #Username:hover {
@@ -72,3 +74,17 @@ h1{
     color: white;
 }
 
+#button {
+    padding: 15px 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: 1s;
+    border: 1px solid black;
+    box-shadow: 0 0 2px black;
+    margin: 10px;
+}
+
+#button:hover {
+    background-color: black;
+    color: white;
+}
