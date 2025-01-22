@@ -81,10 +81,23 @@ h1{
     transition: 1s;
     border: 1px solid black;
     box-shadow: 0 0 2px black;
-    margin: 10px;
+    margin: 10px auto;
 }
 
 #button:hover {
     background-color: black;
     color: white;
+}
+
+p{
+    color: black;
+}
+
+#create-account {
+    text-decoration: none;
+    color: blue
+}
+
+#create-account:hover {
+    color:red ;
 }
