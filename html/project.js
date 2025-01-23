@@ -4,7 +4,8 @@ const password = document.querySelector("#password");
 
 
 login.addEventListener("click", function enter(){
+    let success = document.createElement('p')
     if(password && username > 6) {
-        console.log("login successful");
+        login.appendChild(success);
     }
 })
