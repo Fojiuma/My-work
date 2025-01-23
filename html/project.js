@@ -1,6 +1,10 @@
-const login = document.querySelector("#button")
+const login = document.getElementById("#button");
+const username = document.querySelector("#Username");
+const password = document.querySelector("#password");
 
 
-function login (){
-    
-}
+login.addEventListener("click", function enter(){
+    if(password && username > 6) {
+        console.log("login successful");
+    }
+})
