@@ -11,4 +11,3 @@ login.addEventListener('click', () =>{
    }
 })
 
-mainDiv.style = "red"
