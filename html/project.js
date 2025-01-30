@@ -7,7 +7,7 @@ const successMessage = document.getElementById("success-message");
 login.addEventListener("click", () => {
   if (username.value.length && password.value.length < 6) {
     successMessage.textContent = "your blah blah blah";
-    successMessage.style.color = "red";
+    successMessage.style.color = "red"
     successMessage.style.fontSize = "1.5rem";   
   } else if(username.value == "" && password.value == ""){
     successMessage.textContent = "input something!"
