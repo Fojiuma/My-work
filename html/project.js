@@ -3,6 +3,7 @@ const username = document.getElementById("username");
 const password = document.getElementById("password");
 const mainDiv = document.getElementById("main-div");
 const successMessage = document.getElementById("success-message");
+let userInput = document.getElementById("user-input");
 
 login.addEventListener("click", () => {
   if (username.value.length && password.value.length < 6) {
@@ -20,5 +21,8 @@ login.addEventListener("click", () => {
     successMessage.style.fontSize = "1.2rem";
     window.open("http://127.0.0.1:5500/html/notepad.html")
   }
+
+
+  
   
 });
