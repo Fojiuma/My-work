@@ -1,4 +1,4 @@
-body {
+/* body {
     height: 100vh;
     background: url(START.jpg) no-repeat center center/cover;
     display: flex;
@@ -38,10 +38,10 @@ input {
 #add-task:hover {
     background-color: green;
     color: white;
-}
+} */
 
 /* Styling for task which get added to to-do list*/
-.task{
+/* .task{
     width: 100%;
     background-color: white;
     border-radius: 10px;
@@ -91,7 +91,7 @@ input {
 .task .deleteTask:hover{
     background-color: red;
     color: white;
-}
+} */
 
 
 
@@ -251,7 +251,7 @@ button i {
  } */
 
 /* CSS FOR MODAL */
-/* body {
+body {
     background: url(0002.jpg) no-repeat center center;
     height: 100vh;
     position: relative;
@@ -315,11 +315,11 @@ button i {
     height: 100%;
     z-index: 1;
     background-color: rgba(0,0,0, .4);
-} */
+}
 
 /* TO CREATE ANIMATIONS */
 
-/* CSS FOR QUOTE GENERATOR */
+/* CSS FOR QUOTE GENERATOR */ 
 /* @keyframes animatemodal {
     from {
         top: -300px;
@@ -330,7 +330,7 @@ button i {
         top: 50%;
         opacity: 1;
     }
-} */
+}
 
 
 
