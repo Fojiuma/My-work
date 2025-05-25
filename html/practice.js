@@ -1,57 +1,259 @@
-let myLeads = []
-const inputEl = document.getElementById("input-el");
-const inputBtn = document.getElementById("save-el");
-const ulEl = document.getElementById("ul-el");
+// "use strict";
+const jonasArray = [
+  "Jonas",
+  "Schmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Micheal", "Peter", "Steven"],
+];
 
-let leadsFromLocalStorage =   JSON.parse(localStorage.getItem("myLeads"))
-
-if (leadsFromLocalStorage) {
-  myLeads = leadsFromLocalStorage
-  renderLeads()
+for (let i = 0; i < jonasArray.length; i++) {
+  if (typeof jonasArray[i] !== "string") continue;
+  console.log(jonasArray[i]);
 }
+// const mark = {
+//   fullName: "Mark Miller",
+//   mass: 78,
+//   height: 1.69,
+//   calcBMI: function () {
+//     this.bmi = this.mass / this.height ** 2;
+//     return this.bmi;
+//   },
+// };
+// for (rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weights repitiion ${rep}`);
+// }
+// const john = {
+//   fullname: "John Muller",
+//   mass: 92,
+//   height: 1.95,
+//   calcBMI: function () {
+//     this.bmi = this.mass / this.height ** 2;
+//     return this.bmi;
+//   },
+// };
 
-inputBtn.addEventListener("click", function () {
-  myLeads.push(inputEl.value); //to get the value of the input and store it in the array
-  inputEl.value = ""
-  renderLeads();
-});
+// mark.calcBMI();
+// john.calcBMI();
 
-function renderLeads() {
-   let listItems = ""
-  for (let i = 0; i < myLeads.length; i++) {
-    listItems +=`
-    <li>
-          <a target='_blank' href='${myLeads[i]}'>
-              ${myLeads[i]}
-           <a/>
-           </li>";
-    `
+// console.log(mark.bmi, john.bmi);
+// let jonas = {
+//   firstName: "fojiuma",
+//   lastName: "langaya",
+//   birthYear: 1991,
+//   job: "student",
+//   friends: ["micheal", "emma", "hitman"],
+//   hasDriversLicense: true,
+//   caclAge: function (birthYear) {
+//     this.age = 2037 - this.birthYear;
+//     return this.age;
+//   },
+
+//   getSummary: function () {
+//     return `${this.firstName} is a ${this.caclAge()} years old ${
+//       this.job
+//     } and has ${this.hasDriversLicense ? "a" : "no"} driver's license`;
+//   },
+// };
+
+// console.log(jonas.getSummary());
+
+// console.log(jonas["firstName"]);
+
+// let Intrest = prompt("What do you want to know?");
+// if (jonas[Intrest]) {
+//   console.log(jonas[Intrest]);
+// } else {
+//   console.log("Wrong Request! What do you want to know?");
+// }
+
+// console.log(jonas.friends[0]);
+// function calcTip(bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// }
+
+// let bills = [125, 555, 44];
+// let tip = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// console.log(tip);
+
+// let totals = [bills[0] + tip[0], bills[1] + tip[1], bills[2] + tip[2]];
+// console.log(totals);
+// let friends = ["one", "two", "three"];
+
+// friends.push("four");
+// console.log(friends);
+// friends.pop();
+// console.log(friends);
+
+// friends.unshift("five");
+// console.log(friends);
+
+// friends.shift();
+// console.log(friends);
+
+// console.log(friends.includes("bob"));
+// console.log(friends.includes("one"));
+// function calcAverage(a, b, c) {
+//   (a + b + c) / 3;
+// }
+
+// let dolphinavg = calcAverage(44, 23, 71);
+// let koalasavg = calcAverage(65, 54, 49);
+
+// function checkWinner(avgDolphins, avgKoalas) {
+//   if (dolphinavg >= 2 * koalasavg) {
+//     console.log(`The Dolphins win`);
+//   } else if (koalasavg >= 2 * dolphinavg) {
+//     console.log(`The koalas win `);
+//   } else {
+//     console.log(` The game is a draw`);
+//   }
+// }
+
+// checkWinner(dolphinavg, koalasavg);
+
+// function calcAge1(birthYear) {
+//   return 2037 - birthYear;
+// }
+
+// let ageOne = calcAge1(1991);
+// console.log(ageOne);
+
+// let bill = 275;
+// let tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+// console.log(
+//   `The bill was ${bill}, the tip was ${tip}, and the total value was ${
+//     bill + tip
+//   }`
+// );
+
+// let age = 23;
+// drink = age >= 18 ? "You can drink wine" : "You can't drink wine";
+// console.log(drink);
+
+// let scoreDolphins = (96 + 108 + 89) / 3;
+// let scoreKoalas = (88 + 91 + 110) / 3;
+
+// let weekDay = "monday";
+// switch (weekDay) {
+//   case "monday":
+//     console.log("Plan course structure");
+//     console.log("Go to coding meet up");
+//     break;
+//   case "tuesday":
+//     console.log("Prepare theory videos");
+//     break;
+//   case "wednesday":
+//   case "thursday":
+//     console.log("Write code Examples");
+//     break;
+//   case "friday":
+//     console.log("Record videos");
+//     break;
+//   case "saturday":
+//   case "sunday":
+//     console.log("Enjoy the weekend :D");
+//     break;
+//   default:
+//     console.log("Not a valid day!");
+// }
+
+// if (weekDay === "moday") {
+//   console.log("Plan course structure");
+//   console.log("Go to coding meet up");
+// } else if (weekday === "tuesday") {
+//   console.log("Prepare theory videos");
+// } else if (weekday === "wednesday" || "thursday") {
+//   console.log("Write code Examples");
+// } else if (weekday === "friday") {
+//   console.log("Record videos");
+// } else if (weekday === "saturday" || "sunday") {
+//   console.log("Enjoy the weekend :D");
+// } else {
+//   console.log("INVALID DAY!");
+// }
+
+// let inputYear = "1991";
+// console.log(Number(inputYear));
+// console.log(inputYear + 18);
+
+// let massMark = 78;
+// let massJohn = 95;
+// let heightMark = 1.69;
+// let heightJohn = 1.95;
+
+// let markBMI = massMark / heightMark ** 2;
+// let johnBMI = massJohn / heightJohn ** 2;
+
+// const BMImark = markBMI > johnBMI;
+// console.log(BMImark);
+
+// let myName = "fojiuma";
+
+// const Name = `i'm ${myName}`;
+// console.log(Name);
+
+// console.log(`string \n\
+//     with\n\
+//     multiple lines`);
+
+// let personAge = [12, 15, 23, 34, 7, 20];
+
+// for (let i = 0; i < personAge.length; i++) {
+//   personAge = i;
+//   if (personAge < 18) {
+//     console.log(
+//       `No license. You have ${18 - personAge} years left before you can drive!`
+//     );
+//   }
+// }
+// if (markBMI > johnBMI) {
+//   console.log("Mark's BMI is more than John's");
+// } else {
+//   console.log("Mark's BMI is less than John's");
+// }
+
+// let myLeads = []
+// const inputEl = document.getElementById("input-el");
+// const inputBtn = document.getElementById("save-el");
+// const ulEl = document.getElementById("ul-el");
+
+// let leadsFromLocalStorage =   JSON.parse(localStorage.getItem("myLeads"))
+
+// if (leadsFromLocalStorage) {
+//   myLeads = leadsFromLocalStorage
+//   renderLeads()
+// }
+
+// inputBtn.addEventListener("click", function () {
+//   myLeads.push(inputEl.value); //to get the value of the input and store it in the array
+//   inputEl.value = ""
+//   renderLeads();
+// });
+
+// function renderLeads() {
+//    let listItems = ""
+//   for (let i = 0; i < myLeads.length; i++) {
+//     listItems +=`
+//     <li>
+//           <a target='_blank' href='${myLeads[i]}'>
+//               ${myLeads[i]}
+//            <a/>
+//            </li>";
+//     `
 
 //Taking items from thE array and logging them out on nthe screen
 //innerHtml makes use of html tags inside of javascript and lets you manipulate them without doing it from the html file directly
 // "+=" lets you add a new element without losing what is already in the innerHTML
 
 //THIS DOES THE SAME THING AS INNERHTML SHIT WRITTEN ABOVE
-const li = document.createElement("li")
-li.textContent = myLeads[i]
-ulEl.append(li)
-  }
-  ulEl.innerHTML = listItems;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// const li = document.createElement("li")
+// li.textContent = myLeads[i]
+// ulEl.append(li)
+//   }
+//   ulEl.innerHTML = listItems;
+// }
 
 // let player = {
 //   name: "Fojiuma",
@@ -120,8 +322,6 @@ ulEl.append(li)
 //     renderGame();
 //   }
 // }
-
-
 
 // let grabBox = document.getElementById("box")
 
