@@ -1,16 +1,183 @@
 // "use strict";
-const jonasArray = [
-  "Jonas",
-  "Schmedtmann",
-  2037 - 1991,
-  "teacher",
-  ["Micheal", "Peter", "Steven"],
-];
+// const guessMessage = document.querySelector(".message");
+// const guessNumber = document.querySelector(".number");
+// const guessScore = document.querySelector(".score");
+// let guessInput = document.querySelector(".guess");
+// const buttonCheck = document.querySelector("btn check");
+// const tryAgain = document.querySelector("btn again");
 
-for (let i = 0; i < jonasArray.length; i++) {
-  if (typeof jonasArray[i] !== "string") continue;
-  console.log(jonasArray[i]);
-}
+const secretNumber = Math.trunc(Math.random() * 20) + 1;
+let score = 20;
+let highScore = 0;
+
+const displayMessage = function (message) {
+  document.querySelector(".message").textContent = message;
+};
+document.querySelector(".check").addEventListener("click", function () {
+  const guess = Number(document.querySelector(".guess").value);
+  console.log(guess);
+
+  //WHEN THERE IS NO INPUT
+  if (!guess) {
+    document.querySelector(".message").textContent = "Input a value";
+
+    //WHEN PLAYER IS RIGHT
+  } else if (guess === secretNumber) {
+    displayMessage("Correct Number");
+    document.querySelector(".number").textContent = secretNumber;
+    document.querySelector("body").style.backgroundColor = "#60b347";
+
+    document.querySelector(".number").style.width = "30rem";
+    if (score > highScore) {
+      highScore = score;
+      document.querySelector(".highscore").textContent = highScore;
+    }
+  } else if (guess !== secretNumber) {
+    if (score > 1) {
+      //
+      displayMessage(
+        (document.querySelector(".message").textContent =
+          guess > secretNumber ? "too High" : "too Low! ")
+      );
+      score--;
+      document.querySelector(".score").textContent = score;
+    } else {
+      displayMessage("You lost the game😞");
+      //   document.querySelector(".message").textContent = "You lost the game😞";
+      document.querySelector(".score").textContent = 0;
+    }
+    //       } else if (guess > secretNumber) {
+    //         if (score > 1) {
+    //           document.querySelector(".message").textContent = "Too high. Try again";
+    //           score--;
+    //           document.querySelector(".score").textContent = score;
+    //         } else {
+    //           document.querySelector(".message").textContent = "You lost the game😞";
+    //           document.querySelector(".score").textContent = 0;
+    //         }
+
+    //     //WHEN THE DIGIT IS TOO LOW
+    //   } else if (guess < secretNumber) {
+    //     if (score > 1) {
+    //       document.querySelector(".message").textContent = "Too low. Try again";
+    //       score--;
+    //       document.querySelector(".score").textContent = score;
+    //     } else {
+    //       document.querySelector(".message").textContent = "You lost the game😞";
+    //       document.querySelector(".score").textContent = 0;
+    //     }
+  }
+});
+
+document.querySelector(".again").addEventListener("click", function () {
+  document.querySelector(".score").textContent = 20;
+  displayMessage("Start guessing...");
+  //   document.querySelector(".message").textContent = "Start guessing...";
+  document.querySelector(".guess").value = "";
+  document.querySelector("body").style.backgroundColor = "#222";
+  document.querySelector(".number").style.width = "15rem";
+  document.querySelector(".number").textContent = "?";
+});
+// const data1 = [17, 21, 23];
+// const data2 = [12, 5, -5, 0, 4];
+// const forecasted = function (arr) {
+//   let str = "";
+//   for (let i = 0; i < arr.length; i++) {
+//     str += `${arr[i]} degrees Celcius in ${i + 1} in days...`;
+//   }
+//   console.log("..." + str);
+// };
+// forecasted(data1);
+
+// const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
+
+// const calcTemp = function (temps) {
+//   let max = temps[0];
+//   let min = temps[0];
+//   for (let i = 0; i < temps.length; i++) {
+//     const curTemp = temps[i];
+//     if (curTemp > max) {
+//       max = curTemp;
+//     }
+//     if (curTemp < min) {
+//       min = curTemp;
+//     }
+//   }
+//   console.log(max, min);
+//   return max - min;
+// };
+// const amplitude = calcTemp(temperatures);
+// console.log(amplitude);
+
+// // const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
+
+// const calcTempNew = function (t1, t2) {
+//   const temps = t1.concat(t2);
+
+//   let max = temps[0];
+//   let min = temps[0];
+//   for (let i = 0; i < temps.length; i++) {
+//     const curTemp = temps[i];
+//     if (curTemp > max) {
+//       max = curTemp;
+//     }
+//     if (curTemp < min) {
+//       min = curTemp;
+//     }
+//   }
+//   console.log(max, min);
+//   return max - min;
+// };
+// const amplitudeNew = calcTempNew([3, 5, 1], [9, 0, 5]);
+// console.log(amplitudeNew);
+// console.log(jonas.friends[0]);
+// function calcTip(bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// }
+
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const tips = [];
+// const totals = [];
+
+// for (let i = 0; i <= bills.length; i++) {
+//   const tip = calcTip(bills[i]);
+//   tips.push(tip);
+//   totals.push(tip + bills[i]);
+// }
+// console.log(bills, tips, totals);
+
+// function calcAverage(arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+//   return sum / arr.length;
+// }
+// console.log(calcAverage(totals));
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// while (dice !== 6) {
+//   console.log(`You rolled a ${dice}`);
+//   dice = Math.trunc(Math.random() * 6) + 1;
+//   if (dice === 6) console.log("Loop is about to end...");
+// }
+// const jonasArray = [
+//   "Jonas",
+//   "Schmedtmann",
+//   2037 - 1991,
+//   "teacher",
+//   ["Micheal", "Peter", "Steven"],
+// ];
+
+// for (let i = jonasArray.length - 1; i >= 0; i--) {
+//   console.log(i, jonasArray[i]);
+// }
+
+// for (let exercise = 1; exercise <= 3; exercise++) {
+//   console.log(`-------Exercise number ${exercise}`);
+//   for (let rep = 1; rep < 6; rep++) {
+//     console.log(`Lifting weight repition ${rep}`);
+//   }
+// }
 // const mark = {
 //   fullName: "Mark Miller",
 //   mass: 78,

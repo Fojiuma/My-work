@@ -4,7 +4,6 @@
 
 // function increaseStopWatch(){
 
-
 // if(seconds === 60, seconds++ ){
 //     seconds = 0;
 //     minutes++;
@@ -15,33 +14,14 @@
 // }}
 
 // function watch(){
-    
+
 // }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const FEATURED = document.querySelector(".featured-image");
-const THEIMAGE = FEATURED.querySelector("img");//to get elements nested in another element
+const THEIMAGE = FEATURED.querySelector("img"); //to get elements nested in another element
 
 var altTEXT = THEIMAGE.getAttribute("alt");
 
-var captionElement = document.createElement("figcaption")
+var captionElement = document.createElement("figcaption");
 
-captionElement.appendChild("altTEXT")
+captionElement.appendChild("altTEXT");

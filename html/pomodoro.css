@@ -1,8 +1,16 @@
  body {
-    background-color: #DE3163;
     height: 100vh;
-    display: block;
+    
 }
+.main-body{
+     background-color: rgb(186, 73, 73);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+
+}
+
 
 .breaks, .sessions{
     display: block;
