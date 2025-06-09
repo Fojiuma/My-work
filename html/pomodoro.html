@@ -7,24 +7,27 @@
     <link rel="stylesheet" href="pomodoro.css">
 </head>
 <body>
-   <div class="main-body">
-     <div class="breaks">
-        <h1 id="break-length">Break Length</h1>
-        <div class="break-numbers">
-        <button id="break-minus">Break -</button>
-        <p id="number-between"><b>5</b></p>
-        <button id="break-plus">Break +</button>
+ <header class="heading">
+    <h1 class="pomo">Pomofocus</h1>
+    <div class="top-options">
+        <button class="button-0">Report</button>
+        <button class="button-1">Setting</button>
+        <button class="button-2">Sign In</button>
+        <button class="button-3">Options</button>
     </div>
+ </header>
+<div class="main-body">
+ <section class="timer-action">
+    <div class="breaks">
+        <button class="longest-break">Pomodoro Timer</button>
+        <button class="short-timer">Short Break</button>
+        <button class="long-break">Long Break</button>
     </div>
-
-    <div class="sessions">
-        <h1 id="session-length">Session Length</h1>
-        <div class="session-numbers">
-        <button id="session-minus">Session -</button>
-        <p id="number-between"><b>25</b></p>
-        <button id="session-plus">Session +</button>
+   <div class="fixer">
+    <p id="start-number">25:00</p>
+    <button class="kick-off">START</button>
     </div>
-    </div>
-   </div>
+ </section>
+ </div>
 </body>
 </html> 
