@@ -1,21 +1,21 @@
 // "use strict";
 
-const restaurant = {
-  name: "classic Italiano",
-  location: "Via Angelo Tavanti 23, Firenze, Italy",
-  categories: ["Italian", "Pizzeria", "Vegeterian", "Organic"],
-  starterMenu: ["Focaccia", "Bruschetta", "Garlic bread", "Caprese Salad"],
-  mainMenu: ["Pizza", "Pasta", "Risotto"],
-};
+// const restaurant = {
+//   name: "classic Italiano",
+//   location: "Via Angelo Tavanti 23, Firenze, Italy",
+//   categories: ["Italian", "Pizzeria", "Vegeterian", "Organic"],
+//   starterMenu: ["Focaccia", "Bruschetta", "Garlic bread", "Caprese Salad"],
+//   mainMenu: ["Pizza", "Pasta", "Risotto"],
+// };
 
-const nested = [2, 4, [5, 6]];
+// const nested = [2, 4, [5, 6]];
 // const [i, , j] = nested;
 // console.log([i,j]);
-const [i, , [j, k]] = nested;
-console.log(i, j, k);
+// const [i, , [j, k]] = nested;
+// console.log(i, j, k);
 
 //WHEN WE WANT TO DESTRUCTURE AN ARRAY WITH AN UNKNOWN LENGTH
-const [p = 1, q = 1, r = 1] = [8, 9];
+// const [p = 1, q = 1, r = 1] = [8, 9];
 
 // const modal = document.querySelector(".modal");
 // const overLay = document.querySelector(".overlay");
