@@ -7,7 +7,6 @@ const displayMessage = function (message) {
 };
 document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
-  console.log(guess);
 
   if (!guess) {
     document.querySelector(".message").textContent = "Input a value";
