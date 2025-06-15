@@ -1,51 +1,138 @@
 // "use strict";
-
-const restaurant = {
-  name: "classic Italiano",
-  location: "Via Angelo Tavanti 23, Firenze, Italy",
-  categories: ["Italian", "Pizzeria", "Vegeterian", "Organic"],
-  starterMenu: ["Focaccia", "Bruschetta", "Garlic bread", "Caprese Salad"],
-  mainMenu: ["Pizza", "Pasta", "Risotto"],
-  openingHours: {
-    thu: {
-      open: 12,
-      close: 22,
-    },
-    fri: {
-      open: 11,
-      close: 23,
-    },
-    sat: {
-      open: 0,
-      close: 24,
-    },
-  },
-  order: function (starterIndex, mainIndex) {
-    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+const game = {
+  team1: "Bayern Munich",
+  team2: "Borrussia Dortmund",
+  players: [
+    [
+      "Neuer",
+      "Pavard",
+      "Martinez",
+      "Alaba",
+      "Davies",
+      "Kimmich",
+      "Goretzka",
+      "Coman",
+      "Muller",
+      "Gnarby",
+      "Lewandowski",
+    ],
+    [
+      "Burki",
+      "Schulz",
+      "Hummels",
+      "Akanji",
+      "Hakimi",
+      "Weigl",
+      "Witsel",
+      "Hazard",
+      "Brandt",
+      "Sancho",
+      "Gotze",
+    ],
+  ],
+  score: "4:0",
+  scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"],
+  date: "Nov 9th, 2037",
+  odds: {
+    team1: 1.33,
+    x: 3.25,
+    team2: 6.5,
   },
 };
 
-const { name, openingHours, categories } = restaurant;
-console.log(name, openingHours, categories);
+const [players1, players2] = [game.players];
+let [gk, ...fieldplayers] = players1;
+const allPlayers = [...players1, players2];
+const players1Final = [...players1, "Thiago", "Coutinho", "Perisic"];
+const {
+  odds: { team1, x: draw, team2 },
+} = game;
 
-const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
-console.log("menu");
+// let team1 = game.odds.team1;
+// let draw = game.odds.x;
+// let team2 = game.odds.team2;
 
-const add = function (...numbers) {
-  let sum = 0;
-  for (let i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
-  }
-  console.log(sum);
+const printGoal = function (...players) {
+  console.log(`${players.length} goals were scored`);
 };
 
-add(2, 3);
-add(5, 3, 7, 2);
-add(8, 2, 5, 3, 2, 1, 4);
+printGoal("kimmich", "Davies", "muller", "lewandowski");
+printGoal("kimmich", "Davies");
+printGoal(...game.scored);
 
-const x = [23, 5, 7];
-add(...x);
+team1 < team2 && console.log("Team 1 is more likely to win");
+team1 > team2 && console.log("Team 2 is more likely to win");
 
+// const restaurant = {
+//   name: "classic Italiano",
+//   location: "Via Angelo Tavanti 23, Firenze, Italy",
+//   categories: ["Italian", "Pizzeria", "Vegeterian", "Organic"],
+//   starterMenu: ["Focaccia", "Bruschetta", "Garlic bread", "Caprese Salad"],
+//   mainMenu: ["Pizza", "Pasta", "Risotto"],
+//   openingHours: {
+//     thu: {
+//       open: 12,
+//       close: 22,
+//     },
+//     fri: {
+//       open: 11,
+//       close: 23,
+//     },
+//     sat: {
+//       open: 0,
+//       close: 24,
+//     },
+//   },
+//   order: function (starterIndex, mainIndex) {
+//     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+//   },
+// };
+
+// const { name, openingHours, categories } = restaurant;
+// console.log(name, openingHours, categories);
+
+// const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+// console.log("menu");
+
+// const add = function (...numbers) {
+//   let sum = 0;
+//   for (let i = 0; i < numbers.length; i++) {
+//     sum += numbers[i];
+//   }
+//   console.log(sum);
+// };
+
+// add(2, 3);
+// add(5, 3, 7, 2);
+// add(8, 2, 5, 3, 2, 1, 4);
+
+// const x = [23, 5, 7];
+// add(...x);
+
+// const guest = restaurant.numGuests || 10;
+
+// console.log();
+// restaurant.order && restaurant.order("mushrooms", "meat");
+
+// const rest1 = {
+//   name: "capri",
+//   numGuests: 20,
+// };
+// const rest2 = {
+//   name: "La Piazza",
+//   owner: "Giovanni Rossi",
+// };
+
+// rest2.numGuests = rest2.numGuests || 10;
+// rest1.numGuests = rest1.numGuests || 10;
+
+// rest2.numGuests ||= 10;
+// rest1.numGuests ||= 10;
+
+// rest2.numGuests ??= 10;
+// rest1.numGuests ??= 10;
+// console.log(rest1);
+// console.log(rest2);
 // const nested = [2, 4, [5, 6]];
 // const [i, , j] = nested;
 // console.log([i,j]);
