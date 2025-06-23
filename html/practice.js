@@ -1,23 +1,33 @@
 // "use strict";
-const orderSet = new Set([
-  "Pasta",
-  "Pizza",
-  "Pizza",
-  "Rissotto",
-  "Pasta",
-  "Pizza",
-]);
-console.log(orderSet);
-console.log(new Set("Jonas"));
-console.log(orderSet.size);
-console.log(orderSet.has("Pizza"));
-console.log(orderSet.has("bread"));
+// const question = new Map([
+//   ["question", "What is the best programming language in the world?"][(1, "C")],
+//   [2, "Java"],
+//   [3, "JavaScript"],
+//   ["correct", 3],
+//   [true, "correct"],
+//   [false, "Try again!"],
+// ]);
+// console.log(question);
 
-orderSet.add("Garlic Bread");
-orderSet.delete("Risotto");
-console.log(orderSet);
+// const orderSet = new Set([
+//   "Pasta",
+//   "Pizza",
+//   "Pizza",
+//   "Rissotto",
+//   "Pasta",
+//   "Pizza",
+// ]);
+// console.log(orderSet);
+// console.log(new Set("Jonas"));
+// console.log(orderSet.size);
+// console.log(orderSet.has("Pizza"));
+// console.log(orderSet.has("bread"));
 
-for (order of orderSet) console.log(order);
+// orderSet.add("Garlic Bread");
+// orderSet.delete("Risotto");
+// console.log(orderSet);
+
+// for (order of orderSet) console.log(order);
 // openingHours = {
 //   thu: {
 //     open: 12,
@@ -62,47 +72,71 @@ for (order of orderSet) console.log(order);
 // console.log(restaurant.order?.(0, 1) ?? "Method does not exist");
 
 // console.log(restaurant.mainMenu?.[0] ?? "Array is empty");
-// const game = {
-//   team1: "Bayern Munich",
-//   team2: "Borrussia Dortmund",
-//   players: [
-//     [
-//       "Neuer",
-//       "Pavard",
-//       "Martinez",
-//       "Alaba",
-//       "Davies",
-//       "Kimmich",
-//       "Goretzka",
-//       "Coman",
-//       "Muller",
-//       "Gnarby",
-//       "Lewandowski",
-//     ],
-//     [
-//       "Burki",
-//       "Schulz",
-//       "Hummels",
-//       "Akanji",
-//       "Hakimi",
-//       "Weigl",
-//       "Witsel",
-//       "Hazard",
-//       "Brandt",
-//       "Sancho",
-//       "Gotze",
-//     ],
-//   ],
-//   score: "4:0",
-//   scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"],
-//   date: "Nov 9th, 2037",
-//   odds: {
-//     team1: 1.33,
-//     x: 3.25,
-//     team2: 6.5,
-//   },
-// };
+const game = {
+  team1: "Bayern Munich",
+  team2: "Borrussia Dortmund",
+  players: [
+    [
+      "Neuer",
+      "Pavard",
+      "Martinez",
+      "Alaba",
+      "Davies",
+      "Kimmich",
+      "Goretzka",
+      "Coman",
+      "Muller",
+      "Gnarby",
+      "Lewandowski",
+    ],
+    [
+      "Burki",
+      "Schulz",
+      "Hummels",
+      "Akanji",
+      "Hakimi",
+      "Weigl",
+      "Witsel",
+      "Hazard",
+      "Brandt",
+      "Sancho",
+      "Gotze",
+    ],
+  ],
+  score: "4:0",
+  scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"],
+  date: "Nov 9th, 2037",
+  odds: {
+    team1: 1.33,
+    x: 3.25,
+    team2: 6.5,
+  },
+};
+const gameEvents = new Map([
+  [17, "⚽️ GOAL"],
+  [36, "🔁 Substitution"],
+  [47, "⚽️ GOAL"],
+  [61, "🔁 Substitution"],
+  [64, "🔶 Yellow card"],
+  [69, "🔴 Red card"],
+  [70, "🔁 Substitution"],
+  [72, "🔁 Substitution"],
+  [76, "⚽️ GOAL"],
+  [80, "⚽️ GOAL"],
+  [92, "🔶 Yellow card"],
+]);
 
+const events = [...new Set(gameEvents.values())];
+gameEvents.delete(64);
+
+console.log(
+  `An event happened, on average, every ${90 / gameEvents.size} minutes`
+);
+
+for (const [min, event] of gameEvents) {
+  const half = min <= 45 ? "FIRST" : "SECOND";
+  console.log(`[${half} HALF] ${min}: ${event}`);
+}
 // for (const [i, player] of game.scored.entries()) {
 //   console.log(`Goal ${i + 1}: ${player} `);
 // }
