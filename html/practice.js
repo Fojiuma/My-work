@@ -1,48 +1,67 @@
 // "use strict";
-openingHours = {
-  thu: {
-    open: 12,
-    close: 22,
-  },
-  fri: {
-    open: 11,
-    close: 23,
-  },
-  sat: {
-    open: 0,
-    close: 24,
-  },
-};
-const restaurant = {
-  name: "classic Italiano",
-  location: "Via Angelo Tavanti 23, Firenze, Italy",
-  categories: ["Italian", "Pizzeria", "Vegeterian", "Organic"],
-  starterMenu: ["Focaccia", "Bruschetta", "Garlic bread", "Caprese Salad"],
-  mainMenu: ["Pizza", "Pasta", "Risotto"],
-  openingHours,
-  order(starterIndex, mainIndex) {
-    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
-  },
-};
+const orderSet = new Set([
+  "Pasta",
+  "Pizza",
+  "Pizza",
+  "Rissotto",
+  "Pasta",
+  "Pizza",
+]);
+console.log(orderSet);
+console.log(new Set("Jonas"));
+console.log(orderSet.size);
+console.log(orderSet.has("Pizza"));
+console.log(orderSet.has("bread"));
 
-const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
-for (const item of menu) console.log(item);
+orderSet.add("Garlic Bread");
+orderSet.delete("Risotto");
+console.log(orderSet);
 
-if (restaurant.openingHours && restaurant.openingHours.mon)
-  console.log(restaurant.openingHours.mon.open);
+for (order of orderSet) console.log(order);
+// openingHours = {
+//   thu: {
+//     open: 12,
+//     close: 22,
+//   },
+//   fri: {
+//     open: 11,
+//     close: 23,
+//   },
+//   sat: {
+//     open: 0,
+//     close: 24,
+//   },
+// };
+// const restaurant = {
+//   name: "classic Italiano",
+//   location: "Via Angelo Tavanti 23, Firenze, Italy",
+//   categories: ["Italian", "Pizzeria", "Vegeterian", "Organic"],
+//   starterMenu: ["Focaccia", "Bruschetta", "Garlic bread", "Caprese Salad"],
+//   mainMenu: ["Pizza", "Pasta", "Risotto"],
+//   openingHours,
+//   order(starterIndex, mainIndex) {
+//     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+//   },
+// };
+
+// const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+// for (const item of menu) console.log(item);
+
+// if (restaurant.openingHours && restaurant.openingHours.mon)
+//   console.log(restaurant.openingHours.mon.open);
 
 //OPTIONAL CHAINING
-const days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+// const days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
 
-for (const day of days) {
-  const open = restaurant.openingHours[day]?.open ?? "closed";
+// for (const day of days) {
+//   const open = restaurant.openingHours[day]?.open ?? "closed";
 
-  console.log(`On ${day} , we Open at ${open}`);
-}
+//   console.log(`On ${day} , we Open at ${open}`);
+// }
 
-console.log(restaurant.order?.(0, 1) ?? "Method does not exist");
+// console.log(restaurant.order?.(0, 1) ?? "Method does not exist");
 
-console.log(restaurant.mainMenu?.[0] ?? "Array is empty");
+// console.log(restaurant.mainMenu?.[0] ?? "Array is empty");
 // const game = {
 //   team1: "Bayern Munich",
 //   team2: "Borrussia Dortmund",
@@ -83,6 +102,21 @@ console.log(restaurant.mainMenu?.[0] ?? "Array is empty");
 //     team2: 6.5,
 //   },
 // };
+
+// for (const [i, player] of game.scored.entries()) {
+//   console.log(`Goal ${i + 1}: ${player} `);
+// }
+
+// let average = 0;
+// const odds = Object.values(game.odds);
+// for (odd of odds) average += odd;
+// average /= odds.length;
+// console.log(average);
+
+// for (const [team, odd] of Object.entries(game.odds)) {
+//   const teamStr = team === "x" ? "draw" : `victory ${game[team]}`;
+//   console.log(`Odd of ${teamStr}: ${odd}`);
+// }
 
 // const [players1, players2] = [game.players];
 // let [gk, ...fieldplayers] = players1;
