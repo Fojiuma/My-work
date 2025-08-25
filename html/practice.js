@@ -1,4 +1,70 @@
-// "use strict";
+// "use strict"; enter = \n;
+
+document.body.append(document.createElement("textarea"));
+document.body.append(document.createElement("button"));
+
+document.querySelector("button").addEventListener("click", function () {
+  const text = document.querySelector("textarea").value;
+  const rows = text.split("\n");
+  console.log(rows);
+
+  for (const [i, row] of rows) {
+    const [first, second] = row.toLowerCase().trim().split("_");
+
+    const output = `${first}${second.replace(
+      second[0],
+      second[0].toUpperCase()
+    )}`;
+    console.log(`${output.padEnd(20)}${"✅".repeat(i + 1)}`);
+  }
+});
+// underscore_case;
+// first_name;
+// Some_Variable;
+// calculate_AGE;
+// delayed_departure;
+// const capitalizeName = function (name) {
+
+//   const names = name.split(" ");
+//   const namesUpper = [];
+//   for (const n of names) {
+//     namesUpper.push(n[0].toUpperCase() + n.slice(1));
+//   }
+//   console.log(namesUpper.join(" "));
+// };
+
+// capitalizeName("fojiuma langaya");
+
+// const meeting = "  ";
+
+// const announcement =
+//   "All passangers come to boarding door 23. Boarding door 23!;";
+// console.log(announcement.replaceAll("door", "gate"));
+// function changeDollars(nairaMoney) {
+//   let moneyToChange = Number(nairaMoney);
+//   changedMoney = moneyToChange * 1500;
+//   return changedMoney;
+// }
+
+// console.log(changeDollars(255));
+
+// function checkEmail(userEmail) {
+//   const mainMail = "fojiumajsl@gmail.com";
+//   if (userEmail === mainMail) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(checkEmail("james.io"));
+// function correctName(userName) {
+//   let passengerName = userName.toLowerCase();
+//   const passengerCorrect =
+//     passengerName[0].toUpperCase() + passengerName.slice(1);
+//   return passengerCorrect;
+// }
+
+// console.log(correctName("eMANuell"));
 // const question = new Map([
 //   ["question", "What is the best programming language in the world?"][(1, "C")],
 //   [2, "Java"],
@@ -126,17 +192,30 @@ const gameEvents = new Map([
   [92, "🔶 Yellow card"],
 ]);
 
-const events = [...new Set(gameEvents.values())];
-gameEvents.delete(64);
+// const events = [...new Set(gameEvents.values())];
+// gameEvents.delete(64);
 
-console.log(
-  `An event happened, on average, every ${90 / gameEvents.size} minutes`
-);
+// console.log(
+//   `An event happened, on average, every ${90 / gameEvents.size} minutes`
+// );
 
-for (const [min, event] of gameEvents) {
-  const half = min <= 45 ? "FIRST" : "SECOND";
-  console.log(`[${half} HALF] ${min}: ${event}`);
-}
+// for (const [min, event] of gameEvents) {
+//   const half = min <= 45 ? "FIRST" : "SECOND";
+//   console.log(`[${half} HALF] ${min}: ${event}`);
+// }
+
+// const checkMiddleSeat = function (seat) {
+//   const s = seat.slice(1);
+//   if (s === "B" || s === "E") {
+//     console.log("YOU GOT THE MIDDLE SEAT");
+//   } else {
+//     console.log("YOU GOT LUCKY!");
+//   }
+// };
+
+// checkMiddleSeat("11B");
+// checkMiddleSeat("23C");
+// checkMiddleSeat("3E");
 // for (const [i, player] of game.scored.entries()) {
 //   console.log(`Goal ${i + 1}: ${player} `);
 // }
