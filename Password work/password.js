@@ -5,6 +5,7 @@ const lowerCase = "abcdefghijklmnopqrstuvwxyz";
 const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const numbers = "0123456789";
 const symbols = `!{},./;[]=-)(*&^%$#@#)`;
+let eyeIcon = document.getElementById("invincible");
 
 const allChars = lowerCase + upperCase + numbers + symbols;
 
@@ -32,6 +33,12 @@ const copyImg = document
     document.execCommand("copy");
   });
 
-const closedEye = document
-  .getElementById("invincible")
-  .addEventListener("click", function () {});
+const passwordVisible = function () {
+  if (displayBox.type == "text") {
+    displayBox.type = "password";
+    eyeIcon.src = "invincible password.png";
+  } else {
+    displayBox.type = "text";
+    eyeIcon.src = "Screenshot 2025-09-17 133905.png";
+  }
+};
