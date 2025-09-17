@@ -31,3 +31,7 @@ const copyImg = document
     displayBox.select();
     document.execCommand("copy");
   });
+
+const closedEye = document
+  .getElementById("invincible")
+  .addEventListener("click", function () {});
