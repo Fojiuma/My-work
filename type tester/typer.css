@@ -1,7 +1,78 @@
-/* /*--------------------------------------------------------------
-Typography
---------------------------------------------------------------*/
-
+body{
+    box-sizing: border-box;
+    border: none;
+    font-family: sans-serif;
+}
+.masthead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(13, 27, 46) ;
+    color: #fff;
+    font-weight: 300;
+    border: none;
+    border-radius: 10px 10px 0 0 ;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(66, 152, 144);
+    text-align: center;
+    color: #fff;
+    padding: 50px;
+}
+.intro p {
+    margin: 0 auto;
+    max-width: 550px;
+}
+.briefing p{
+    background-color: rgb(237, 237, 237);
+    margin: 20px 380px;
+    word-spacing: 5px;
+    line-height: 25px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    vertical-align: top;
+}
+#typeArea{
+    padding: 70px 200px;
+    border-radius: 10px;
+    border: 10px solid gray;
+    
+}
+.timer-start{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.timer-start p{
+    font-size:60px;
+    font: bolder;
+    margin-right: 450px;
+}
+#start{
+    border: 10px solid rgb(233, 93, 15);
+    padding: 30px;
+    color: rgb(233, 93, 15);
+    background-color: #fff;
+    font-size: 24px;
+    border-radius: 5px;
+}
+#start:hover{
+    background-color: rgb(233, 93, 15);
+    color: #fff;
+    transition: .3s;
+    border: 10px solid rgb(233, 93, 15);
+}
 
 
 
