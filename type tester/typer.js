@@ -1,11 +1,23 @@
 const displayArea = document.getElementById("typeArea");
 const startOver = document.getElementById("start");
-const starter = document.getElementById("timer-start");
-
+const starter = document.getElementById("kick-off");
+const originText = document.getElementById("origin-text");
 var timer = [0, 0, 0, 0];
 
+function leadingZero(time) {
+  if (time <= 9) {
+    time = "0" + time;
+  }
+  return time;
+}
+
 function runTimer() {
-  let currentTime = timer[0] + ":" + timer[1] + ":" + timer[2];
+  let currentTime =
+    leadingZero(timer[0]) +
+    ":" +
+    leadingZero(timer[1]) +
+    ":" +
+    leadingZero(timer[2]);
   starter.innerHTML = currentTime;
   timer[3]++;
 
@@ -21,6 +33,15 @@ function start() {
 }
 function SpellCheck() {
   let textEnterd = displayArea.value;
+  let originTextMatch = originText.subString(0, textEntered.length);
+
+  if (textEntered == originText) {
+    displayArea.style.borderColor = "#429890";
+  } else if (textEntered == originTextMatch) {
+    displayArea.style.borderColor = "#65CCF3";
+  } else {
+    displayArea.style.borderColor = "#E95D0F";
+  }
 }
 
 function reset() {
