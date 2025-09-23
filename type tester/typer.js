@@ -1,6 +1,6 @@
 const displayArea = document.getElementById("typeArea");
 const startOver = document.getElementById("start");
-const starter = document.getElementById("starter");
+const starter = document.getElementById("timer-start");
 
 var timer = [0, 0, 0, 0];
 
@@ -22,9 +22,10 @@ function start() {
 function SpellCheck() {
   let textEnterd = displayArea.value;
 }
+
 function reset() {
   console.log("key pressed");
 }
 displayArea.addEventListener("keypress", start, false);
-displayArea.addEventListener("keyup", spellCheck, false);
-startOver.addEventListener(reset, false);
+displayArea.addEventListener("keyup", SpellCheck, false);
+startOver.addEventListener("click", reset, false);
