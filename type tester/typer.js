@@ -33,7 +33,7 @@ function start() {
 }
 function SpellCheck() {
   let textEnterd = displayArea.value;
-  let originTextMatch = originText.subString(0, textEntered.length);
+  let originTextMatch = originText.subString(0, textEnterd.length);
 
   if (textEntered == originText) {
     displayArea.style.borderColor = "#429890";
