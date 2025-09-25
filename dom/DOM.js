@@ -1,13 +1,29 @@
+let openBtn = document.getElementById("open-btn");
+let modalContainer = document.getElementById("modal-container");
+let closeBtn = document.getElementById("close-btn");
+
+openBtn.addEventListener("click", function () {
+  modalContainer.style.display = "block";
+});
+
+closeBtn.addEventListener("click", function () {
+  modalContainer.style.display = "none";
+});
+
+window.addEventListener("click", function (e) {
+  if (e.target === modalContainer) {
+    modalContainer.style.display = "none";
+  }
+});
+
 // const addTask = document.getElementById('add-task');
 // const taskContainer = document.getElementById('add-task-container');
 // const inputTask = document.getElementById('input-task');
-
 
 // addTask.addEventListener('click', function(){
 
 //     let task = document.createElement('div');
 //     task.classList.add('task');
-
 
 //     let li  = document.createElement('li');
 //     li.innerText = `${inputTask.value}`;
@@ -27,9 +43,9 @@
 //         alert('Please Enter a Task');
 
 //     }else {
-//         taskContainer.appendChild(task); 
+//         taskContainer.appendChild(task);
 //     }
- 
+
 //     inputTask.value = "";
 
 //     checkButton.addEventListener('click', function(){
@@ -41,51 +57,7 @@
 
 //         target.parentElement.remove();
 //     })
-// }); 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// });
 
 // const startStop = document.querySelector('#startStopBtn');
 // const resetBtn = document.querySelector('#resetBtn');
@@ -102,7 +74,7 @@
 // let timerStatus = "stopped"
 
 // function stopWatch() {
-    
+
 //     seconds++
 
 //     if(seconds / 60 === 1){
@@ -130,7 +102,7 @@
 //         leadingHours = hours;
 //     }
 
-// let displayTimer = document.getElementById('timer').innerText = 
+// let displayTimer = document.getElementById('timer').innerText =
 //     leadingHours + ":" + leadingMinutes + ":" + leadingSeconds;
 // }
 
@@ -168,35 +140,11 @@
 // for (i = 0; i < accordion.length; i++ ){
 
 //   accordion[i].addEventListener('click', function () {
-//     this.classList.toggle('active');    
+//     this.classList.toggle('active');
 //   })
 // }
 
 //MODAL DEVELOPEMENT
-let openBtn = document.getElementById('open-btn');
-let modalContainer = document.getElementById('modal-container');
-let closeBtn = document.getElementById('close-btn');
-
-openBtn.addEventListener('click', function(){
-
-    modalContainer.style.display = 'block';
-});
-
-closeBtn.addEventListener('click', function(){
- 
-  modalContainer.style.display = 'none';
-});
-
-window.addEventListener('click', function(e){
-  if(e.target === modalContainer){
-    modalContainer.style.display = 'none'
-  }
-});
-
-
-
-
-
 
 // JAVASCRIPT FOR QUOTE GENERATOR
 // let btn = document.querySelector('#new-quote');
@@ -233,8 +181,6 @@ window.addEventListener('click', function(e){
 
 // })
 
-
-
 //getElementById()
 //getElementByClassName()
 //getElementByTagName()
@@ -260,7 +206,7 @@ window.addEventListener('click', function(e){
 // li.remove();
 //remove the element from the html elements
 
-//using the alert() 
+//using the alert()
 // const buttonTwo = document.querySelector("btn-2");
 
 // function alertBtn() {
@@ -278,17 +224,13 @@ window.addEventListener('click', function(e){
 // }
 // newBackgroundColor.addEventListener("mouseover", changeBgColor);
 
-
 // document.querySelector("btn-3").addEventListener
 // ("click", function(e) {
 //   console.log(e.target.innerText = "clicked");
-// },true) 
+// },true)
 
 //PreventDefault() method stops the default setting placed on any element
 
 //Event delegation allows you to add a SINGLE event listener to a parent element that adds it to all of its present AND future descendants that matcha selector
 
-
 //MATCHES() method is used to check a condition if the selected element matches the styling we want to apply.
-
-
